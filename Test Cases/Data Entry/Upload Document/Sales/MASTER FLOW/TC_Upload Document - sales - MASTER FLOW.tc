@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>sebagai master untuk upload foto borrower. sebagai landasan dalam membuat test case test case lain</description>
+   <name>TC_Upload Document - sales - MASTER FLOW</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00b1bc1a-ecb1-4e6a-b67a-7c7f0ee35536</testCaseGuid>
+   <variable>
+      <defaultValue>'abc.jpg'</defaultValue>
+      <description></description>
+      <id>c18e01a8-d612-47d6-8ca0-2612ab9eaf55</id>
+      <masked>false</masked>
+      <name>Sales_varKTP</name>
+   </variable>
+   <variable>
+      <defaultValue>'Y'</defaultValue>
+      <description></description>
+      <id>f2ebd855-c39d-411c-9783-3a33a318e391</id>
+      <masked>false</masked>
+      <name>Sales_varUploadKTP</name>
+   </variable>
+</TestCaseEntity>

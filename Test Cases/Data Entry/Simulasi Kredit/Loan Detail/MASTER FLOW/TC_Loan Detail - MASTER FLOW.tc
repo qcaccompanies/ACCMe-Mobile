@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Loan Detail - MASTER FLOW</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7490211b-3101-409e-b5d4-f51012e2af96</testCaseGuid>
+   <variable>
+      <defaultValue>'regular'</defaultValue>
+      <description></description>
+      <id>577f3a37-2f7c-4214-abba-4a44082bd6fb</id>
+      <masked>false</masked>
+      <name>varTipeAngsuran</name>
+   </variable>
+</TestCaseEntity>

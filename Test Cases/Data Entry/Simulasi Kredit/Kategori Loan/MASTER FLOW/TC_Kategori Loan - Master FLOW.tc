@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Kategori Loan - Master FLOW</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1e562ca-0bcb-4321-afa5-a4f9d45f4471</testCaseGuid>
+   <variable>
+      <defaultValue>'CF'</defaultValue>
+      <description></description>
+      <id>1f20f5e7-2b2e-4490-b6df-305bec5820fe</id>
+      <masked>false</masked>
+      <name>varTipeAplikasi</name>
+   </variable>
+   <variable>
+      <defaultValue>'personal'</defaultValue>
+      <description></description>
+      <id>0d3938a5-42bc-4306-94b2-032e77dc5222</id>
+      <masked>false</masked>
+      <name>varTipePelanggan</name>
+   </variable>
+   <variable>
+      <defaultValue>'PB'</defaultValue>
+      <description></description>
+      <id>d62dd1c2-94f4-41d9-b462-17b593ea66df</id>
+      <masked>false</masked>
+      <name>varObjekPembiayaan</name>
+   </variable>
+   <variable>
+      <defaultValue>'produktif'</defaultValue>
+      <description></description>
+      <id>e39db7ea-826b-41f1-9f06-0070cb5b4f56</id>
+      <masked>false</masked>
+      <name>varTujuanPembiayaan</name>
+   </variable>
+   <variable>
+      <defaultValue>'MOBIL'</defaultValue>
+      <description></description>
+      <id>d42b8ddf-e77e-4ce7-bda0-8770cb7a5bd5</id>
+      <masked>false</masked>
+      <name>varJaminanPembiayaan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Approval'</defaultValue>
+      <description></description>
+      <id>f8d8fba5-a0b9-43c3-9aab-3728ff8458d9</id>
+      <masked>false</masked>
+      <name>varOpsiNPWP</name>
+   </variable>
+</TestCaseEntity>

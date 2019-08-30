@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Penghasilan - MASTER FLOW</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6069192-6277-42bd-9a3c-22c189ac8fff</testCaseGuid>
+   <variable>
+      <defaultValue>'100000000'</defaultValue>
+      <description></description>
+      <id>fa78e367-d7cc-400d-ad32-2ef8db1768ff</id>
+      <masked>false</masked>
+      <name>varPenghasilanKotorSatu</name>
+   </variable>
+   <variable>
+      <defaultValue>'100000001'</defaultValue>
+      <description></description>
+      <id>6ccd18fd-6586-484f-96d9-6abde111fe61</id>
+      <masked>false</masked>
+      <name>varPenghasilanKotorDua</name>
+   </variable>
+   <variable>
+      <defaultValue>'100000002'</defaultValue>
+      <description></description>
+      <id>cd5a178d-cfe8-448f-943c-f66716b4e809</id>
+      <masked>false</masked>
+      <name>varPenghasilanKotorTiga</name>
+   </variable>
+   <variable>
+      <defaultValue>'RUMAH SAKIT'</defaultValue>
+      <description></description>
+      <id>60c9cd3d-a338-4468-af89-9c078ccf320d</id>
+      <masked>false</masked>
+      <name>varJenisPekerjaanAtauUsahaSatu</name>
+   </variable>
+   <variable>
+      <defaultValue>'RUMAH SAKIT'</defaultValue>
+      <description></description>
+      <id>e1fd0d4e-b88e-49dd-bc68-f255f3a0a257</id>
+      <masked>false</masked>
+      <name>varJenisPekerjaanAtauUsahaDua</name>
+   </variable>
+   <variable>
+      <defaultValue>'RUMAH SAKIT'</defaultValue>
+      <description></description>
+      <id>24cc45bd-b16f-4648-b2a5-0fb1ce222d5f</id>
+      <masked>false</masked>
+      <name>varJenisPekerjaanAtauUsahaTiga</name>
+   </variable>
+   <variable>
+      <defaultValue>'Usaha'</defaultValue>
+      <description></description>
+      <id>2c1cf5e3-54fd-4a07-909a-4742418a7c0b</id>
+      <masked>false</masked>
+      <name>varSumberPenghasilanSatu</name>
+   </variable>
+   <variable>
+      <defaultValue>'Borrower'</defaultValue>
+      <description></description>
+      <id>5c397347-d65e-4dfd-aae4-9a4cedc192be</id>
+      <masked>false</masked>
+      <name>varPemilikPenghasilanSatu</name>
+   </variable>
+   <variable>
+      <defaultValue>'Y'</defaultValue>
+      <description></description>
+      <id>6cb16408-2306-47fa-a165-0c56d4e2eaad</id>
+      <masked>false</masked>
+      <name>varPenghasilanDua</name>
+   </variable>
+   <variable>
+      <defaultValue>'Y'</defaultValue>
+      <description></description>
+      <id>8f16fcf6-13f6-4c52-83a0-efd36a9cd842</id>
+      <masked>false</masked>
+      <name>varPenghasilanTiga</name>
+   </variable>
+</TestCaseEntity>
