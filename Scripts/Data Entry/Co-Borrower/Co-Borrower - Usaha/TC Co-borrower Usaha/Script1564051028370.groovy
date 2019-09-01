@@ -49,7 +49,7 @@ Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Sub-Bi
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CUvarSubBidangUsaha]), 0)
 
-Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Sub-BidangUsaha'), 0)
+Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-TanggalMulaiBisnis'), 0)
 
 WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : '2010'], FailureHandling.STOP_ON_FAILURE)
 

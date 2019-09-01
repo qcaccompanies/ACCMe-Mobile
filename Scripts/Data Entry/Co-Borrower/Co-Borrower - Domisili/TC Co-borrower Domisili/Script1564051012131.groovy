@@ -29,8 +29,6 @@ if (CDvarDomisili == 'Tidak') {
 
     Mobile.tap(findTestObject('Coborrower/Coborrower - Domisili/Cobborower-Domisili-KodePOs'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.tap(findTestObject('Coborrower/Coborrower - Domisili/Cobborower-Domisili-12420'), 0)
 } else {
     Mobile.tap(findTestObject('Coborrower/Coborrower - Domisili/Coborrower-Domisili-YaDomisili'), 0)
@@ -44,8 +42,6 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Domisili/Coborrower-Domis
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.7, 0.3, 1000)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Domisili/Coborrower-Domisili-NegaraDomisili'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CDvarNegaraDomisili]), 0)
 

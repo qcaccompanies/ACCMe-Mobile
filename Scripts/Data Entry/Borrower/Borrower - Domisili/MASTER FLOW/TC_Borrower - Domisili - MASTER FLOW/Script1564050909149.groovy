@@ -29,8 +29,6 @@ if (BDvarDomisili == 'Tidak') {
 
     Mobile.tap(findTestObject('Borrower/Borrower - Domisili/Borrower_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Borrower/Borrower - Domisili/Borrower_Domisili_LOVKodePos'), 0)
@@ -43,8 +41,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Domisili/Borrower_InpNegaraDo
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.7, 0.3, 1000)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Domisili/Borrower_InpNegaraDomisili'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : BDvarNegaraDomisili]), 0)
 

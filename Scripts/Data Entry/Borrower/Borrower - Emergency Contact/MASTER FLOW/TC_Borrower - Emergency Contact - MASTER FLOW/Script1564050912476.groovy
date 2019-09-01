@@ -29,8 +29,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Emergency/Borrower_Emergency_
 
 Mobile.tap(findTestObject('Borrower/Borrower - Emergency/Borrower_Emergency_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.hideKeyboard()
-
 Mobile.tap(findTestObject('Borrower/Borrower - Emergency/Borrower_Emergency_LOVKodePos'), 0)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Emergency/Borrower_Emergency_InpKodeArea'), BEvarKodeArea, 0)

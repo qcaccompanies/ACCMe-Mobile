@@ -18,8 +18,13 @@ Mobile.tap(findTestObject('Upload Document/Tab/UnggahDokumen_TabSales'), 0)
 if (Sales_varUploadKTP == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnKTP'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
-
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
     Mobile.scrollToText(Sales_varKTP, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Sales_varKTP]), 0)

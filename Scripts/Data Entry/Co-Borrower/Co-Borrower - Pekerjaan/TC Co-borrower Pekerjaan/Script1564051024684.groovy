@@ -66,8 +66,6 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Peke
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-NationalityPerusahaan'), 0)
 
-Mobile.hideKeyboard()
-
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CPvarNationalityPerusahaan]), 0)
 
 Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-Website'), CPvarWebsite, 0)
@@ -94,8 +92,6 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Peke
 not_run: CustomKeywords.'mobile.mobileSwipe.UpDown'(0.5, 0.3, 1000)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-KodePos'), 0)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-InputanKodepos'), 0)
 

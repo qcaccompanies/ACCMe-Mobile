@@ -132,7 +132,7 @@
       <name>varNoKontrakExisting</name>
    </variable>
    <variable>
-      <defaultValue>'PT AAB REGULER OJK 2017(305001)'</defaultValue>
+      <defaultValue>'305001'</defaultValue>
       <description></description>
       <id>b03e9b83-853b-455f-8061-fae620e6f75a</id>
       <masked>false</masked>

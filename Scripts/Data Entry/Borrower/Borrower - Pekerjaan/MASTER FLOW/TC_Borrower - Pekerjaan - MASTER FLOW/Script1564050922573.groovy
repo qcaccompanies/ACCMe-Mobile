@@ -49,8 +49,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpBidangUsaha'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_LOVBidangUsaha'), 0)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_TxtSubBidangUsaha'), 0)
@@ -61,8 +59,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_
     0)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpNationalityPerusahaan'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : BPvarNationalityPerusahaan]), 0)
 
@@ -90,8 +86,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpKodePos'), BPvarKodePos, 0)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 

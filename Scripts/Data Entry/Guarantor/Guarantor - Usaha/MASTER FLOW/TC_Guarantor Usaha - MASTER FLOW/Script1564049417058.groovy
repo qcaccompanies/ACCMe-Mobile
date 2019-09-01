@@ -33,8 +33,6 @@ Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Bidang Usa
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Bidang Usaha'), GUvarBidangUsaha, 0)
 
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
 CustomKeywords.'mobile.picklist.List'(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_Usaha_LOVBidangUsaha'), FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -58,8 +56,6 @@ CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
 Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Kode Pos'), GUvarKodePos, 0)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Kode Pos'), 0)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_USH LOV Kode Pos'), 0)
 

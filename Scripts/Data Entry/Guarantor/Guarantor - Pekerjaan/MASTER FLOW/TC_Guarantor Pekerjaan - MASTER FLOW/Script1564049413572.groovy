@@ -17,8 +17,6 @@ Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Pekerja
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Pekerjaan'), GBvarPekerjaan, 0)
 
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
 WebUI.delay(2)
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : GBvarPekerjaan]), 0)
@@ -67,8 +65,6 @@ Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Nat
     0)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Natiolity Perusahaan'), 0)
-
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK LOV Nationality Perusahaan'), 0)
 

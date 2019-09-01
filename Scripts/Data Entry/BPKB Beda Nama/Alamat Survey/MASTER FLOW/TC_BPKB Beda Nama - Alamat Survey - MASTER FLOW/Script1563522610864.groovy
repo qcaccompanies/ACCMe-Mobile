@@ -26,14 +26,10 @@ if (Survey_varAlamatSurveySamaDomisili == 'N') {
 
     Mobile.setText(findTestObject('BPKB Beda Nama/Alamat Survey/BPKBBedaNama_AlamatSurvey_InpRW'), Survey_varRW, 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.setText(findTestObject('BPKB Beda Nama/Alamat Survey/BPKBBedaNama_AlamatSurvey_InpKodePos'), Survey_varKodePos, 
         0)
 
     Mobile.tap(findTestObject('BPKB Beda Nama/Alamat Survey/BPKBBedaNama_AlamatSurvey_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
 
     Mobile.tap(findTestObject('BPKB Beda Nama/Alamat Survey/BPKBBedaNama_AlamatSurvey_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 

@@ -26,8 +26,6 @@ if (GDvarDomisili == 'Tidak') {
 
     Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Kode Pos'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor-Domisili-12420'), 0)
 } else {
     Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor-Domisili-YaDomisili'), 0)
@@ -36,8 +34,6 @@ if (GDvarDomisili == 'Tidak') {
 Mobile.setText(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Negara'), GDvarNegara, 0)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Negara'), 0)
-
-Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_Domisili_LOVNegaraDomisili'), 0)
 

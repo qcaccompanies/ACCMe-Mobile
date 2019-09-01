@@ -29,8 +29,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpBidan
 
 Mobile.tap(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpBidangUsaha'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.hideKeyboard()
-
 CustomKeywords.'mobile.picklist.List'(findTestObject('Borrower/Borrower - Usaha/borrower-usaha-LOVbidangusaha'), FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_TxtSubBidangUsaha'), 0)
@@ -59,8 +57,6 @@ if (BUvarSesuaiDomisili == 'Ya') {
     Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpKodePos'), BUvarKodePos, 0)
 
     Mobile.tap(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpKodePos'), 0)
-
-    Mobile.hideKeyboard()
 
     Mobile.tap(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_LOVKodePos'), 0)
 

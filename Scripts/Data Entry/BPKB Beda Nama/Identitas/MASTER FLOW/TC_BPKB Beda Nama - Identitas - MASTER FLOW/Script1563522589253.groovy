@@ -70,8 +70,6 @@ Mobile.setText(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_InpKodePos'
 
 Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.hideKeyboard()
-
 Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_Identitas_LOVKodePos'), 0)
 
 Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_TxtAgama'), 0)

@@ -60,8 +60,6 @@ if (BIvarVerifikasi == 'Ya') {
 
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : BIvarTempatLahir]), 0, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
@@ -83,8 +81,6 @@ if (BIvarVerifikasi == 'Ya') {
     Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), BIvarKodePos, 0)
 
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
 
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_Identitas_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 

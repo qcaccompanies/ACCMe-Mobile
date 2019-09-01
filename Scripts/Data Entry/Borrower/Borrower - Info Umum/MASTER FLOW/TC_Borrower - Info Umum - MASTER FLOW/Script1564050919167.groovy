@@ -20,8 +20,6 @@ Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaLen
 
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaPanggilan'), BIUvarNamaPanggilan, 0)
 
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNoNPWP'), BIUvarNoNPWP, 0)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaNPWP'), BIUvarNamaNPWP, 0)

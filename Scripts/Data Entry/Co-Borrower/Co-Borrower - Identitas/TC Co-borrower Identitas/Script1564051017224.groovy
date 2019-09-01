@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.internal.PathUtil as PathUtil
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
+Mobile.waitForElementPresent(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-WNI'), 0)
+
 if (CIvarKewarganegaraan == 'WNI') {
     Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-WNI'), 0)
 } else {
@@ -59,8 +61,6 @@ if (CIvarVerifikasi == 'Ya') {
 
     Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CIvarTempatLahir]), 0)
 
     Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalLahir'), 0)
@@ -77,8 +77,6 @@ if (CIvarVerifikasi == 'Ya') {
     Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), CIvarKodePos, 0)
 
     Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
 
     Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-12420'), 0)
 

@@ -27,13 +27,11 @@ if (varPenggunaanUnit == 'pribadi') {
     Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_PenggunaanUnit Kmrsl'), 0)
 }
 
-Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Nama Asuransi'), varAsuransi, 0)
-
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Nama Asuransi'), 0)
 
-Mobile.hideKeyboard()
+Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Nama Asuransi'), varAsuransi, 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : varAsuransi]), 0)
+Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_LOV Nama Asuransi'), 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_KDWilayah'), 0)
 

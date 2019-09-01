@@ -60,8 +60,6 @@ if (GIvarVerifikasi == 'Ya') {
 
     Mobile.tap(findTestObject('Guarantor/Guarantor - Identitas/Guarantor_Tempat Lahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.hideKeyboard()
-
     Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : GIvarTempatLahir]), 0, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
@@ -83,8 +81,6 @@ if (GIvarVerifikasi == 'Ya') {
     Mobile.setText(findTestObject('Guarantor/Guarantor - Identitas/Guarantor_KDPos'), GIvarKodePos, 0)
 
     Mobile.tap(findTestObject('Guarantor/Guarantor - Identitas/Guarantor_KDPos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
 
     Mobile.tap(findTestObject('Guarantor/Guarantor - Identitas/Guarantor-Identitas-12420'), 0, FailureHandling.STOP_ON_FAILURE)
 

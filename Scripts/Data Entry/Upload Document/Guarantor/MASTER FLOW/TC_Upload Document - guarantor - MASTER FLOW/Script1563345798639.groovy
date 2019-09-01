@@ -18,10 +18,15 @@ Mobile.tap(findTestObject('Upload Document/Tab/UnggahDokumen_TabGuarantor'), 0)
 if (Guarantor_varUploadKTP == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnKTP'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varKTP, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varKTP, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varKTP]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -30,10 +35,15 @@ if (Guarantor_varUploadKTP == 'Y') {
 if (Guarantor_varUploadSelfie == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnSelfie'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varSelfie, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varSelfie, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varSelfie]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -42,10 +52,15 @@ if (Guarantor_varUploadSelfie == 'Y') {
 if (Guarantor_varUploadWefie == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnWefie'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varWefie, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varWefie, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varWefie]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -54,10 +69,15 @@ if (Guarantor_varUploadWefie == 'Y') {
 if (Guarantor_varUploadKartuKeluarga == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnKartuKeluarga'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varKartuKeluarga, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varKartuKeluarga, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varKartuKeluarga]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -66,10 +86,15 @@ if (Guarantor_varUploadKartuKeluarga == 'Y') {
 if (Guarantor_varUploadSim == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnSim'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varSim, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varSim, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varSim]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -78,10 +103,15 @@ if (Guarantor_varUploadSim == 'Y') {
 if (Guarantor_varUploadNPWP == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnNPWP'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varNPWP, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varNPWP, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varNPWP]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -90,10 +120,15 @@ if (Guarantor_varUploadNPWP == 'Y') {
 if (Guarantor_varUploadSTNK == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnSTNK'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varSTNK, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varSTNK, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varSTNK]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -102,10 +137,15 @@ if (Guarantor_varUploadSTNK == 'Y') {
 if (Guarantor_varUploadSlipGaji == 'Y') {
     Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnSlipGaji'), 0)
 
-    Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 
+        3, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Upload Document/Upload Document - Item Upload/UnggahDokumen_BtnGallery'), 0)
+    } else {
+        Mobile.tap(findTestObject('Upload Document/android.view.View168 -  Gallery'), 0)
+    }
+    
+    Mobile.scrollToText(Guarantor_varSlipGaji, FailureHandling.STOP_ON_FAILURE)
 
-	Mobile.scrollToText(Guarantor_varSlipGaji, FailureHandling.STOP_ON_FAILURE)
-	
     Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : Guarantor_varSlipGaji]), 0)
 
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
