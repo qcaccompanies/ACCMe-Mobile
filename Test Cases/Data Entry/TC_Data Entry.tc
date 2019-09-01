@@ -594,7 +594,7 @@
       <name>Sales_varUploadKTP</name>
    </variable>
    <variable>
-      <defaultValue>'N'</defaultValue>
+      <defaultValue>'Married'</defaultValue>
       <description></description>
       <id>68ebdab3-e521-4e5a-adbe-66dd8d31ab06</id>
       <masked>false</masked>
@@ -685,7 +685,7 @@
       <name>BIvarAgama</name>
    </variable>
    <variable>
-      <defaultValue>'UNMARRIED'</defaultValue>
+      <defaultValue>'MARRIED'</defaultValue>
       <description></description>
       <id>93d19067-156b-4a8c-a701-1c859df4ff55</id>
       <masked>false</masked>
@@ -1287,7 +1287,7 @@
       <name>CvarUsahaTab</name>
    </variable>
    <variable>
-      <defaultValue>'3471095110940001'</defaultValue>
+      <defaultValue>'3471094304910001'</defaultValue>
       <description></description>
       <id>483099f4-bd5b-4469-963f-6d4275bb1851</id>
       <masked>false</masked>

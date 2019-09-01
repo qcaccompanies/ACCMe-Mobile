@@ -35,6 +35,8 @@ CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
 
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.2, 0.8, 1000)
 
+Mobile.tap(findTestObject('Borrower/Borrower - Info Umum/Borrower_TabDomisili'), 0)
+
 WebUI.callTestCase(findTestCase('Data Entry/Borrower/Borrower - Domisili/MASTER FLOW/TC_Borrower - Domisili - MASTER FLOW'), 
     [('BDvarAlamatLengkap') : BDvarAlamatLengkap, ('BDvarRT') : BDvarRT, ('BDvarRW') : BDvarRW, ('BDvarKodePos') : BDvarKodePos
         , ('BDvarNegaraDomisili') : BDvarNegaraDomisili, ('BDvarPetunjukAlamat') : BDvarPetunjukAlamat, ('BDvarNoTelponFixedLine') : BDvarNoTelponFixedLine
@@ -61,8 +63,6 @@ if (BvarPekerjaanTab == 'Ya') {
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
-
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.2, 0.8, 1000)
 
 if (BvarUsahaTab == 'Ya') {
     WebUI.callTestCase(findTestCase('Data Entry/Borrower/Borrower - Usaha/MASTER FLOW/TC_Borrower - Usaha - MASTER FLOW'), 

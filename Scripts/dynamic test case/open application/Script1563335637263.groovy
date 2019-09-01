@@ -9,5 +9,5 @@ def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.apkname, RunConfigu
 
 Mobile.startApplication(appPath, false)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 

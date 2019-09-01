@@ -73,6 +73,10 @@ if (varUploadSales == 'Y') {
         [('Sales_varKTP') : Sales_varKTP, ('Sales_varUploadKTP') : Sales_varUploadKTP], FailureHandling.STOP_ON_FAILURE)
 }
 
+CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
+
+Mobile.waitForElementPresent(findTestObject('dynamic object/BtnBerikutnya'), 0)
+
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
@@ -113,6 +117,10 @@ Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
 if (AllStatusPerkawinan == 'Married') {
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
     WebUI.callTestCase(findTestCase('Data Entry/Co-Borrower/Flow Coborrower'), [('CvarPekerjaanTab') : CvarPekerjaanTab, ('CvarUsahaTab') : CvarUsahaTab
             , ('CIvarKTP') : CIvarKTP, ('CIvarNamaSesuaiIdentitas') : CIvarNamaSesuaiIdentitas, ('CIvarTempatLahir') : CIvarTempatLahir
             , ('CIvarAlamatLengkap') : CIvarAlamatLengkap, ('CIvarRT') : CIvarRT, ('CIvarRW') : CIvarRW, ('CIvarKodePos') : CIvarKodePos
@@ -139,11 +147,15 @@ if (AllStatusPerkawinan == 'Married') {
 
     Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-    Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 }
 
 if (AllGuarantor == 'Ya') {
-    WebUI.callTestCase(findTestCase('Data Entry/Guarantor/Flow Guarantor'), [('GvarPekerjaanTab') : 'Ya', ('GvarUsahaTab') : 'Ya'
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('Data Entry/Guarantor/Flow Guarantor'), [('GvarPekerjaanTab') : GvarPekerjaanTab, ('GvarUsahaTab') : GvarUsahaTab
             , ('GIvarNIK') : GIvarNIK, ('GIvarAgama') : GIvarAgama, ('GIvarStatus') : GIvarStatus, ('GIvarNamaSesuaiIdentitas') : GIvarNamaSesuaiIdentitas
             , ('GIvarTempatLahir') : GIvarTempatLahir, ('GIvarAlamatLengkap') : GIvarAlamatLengkap, ('GIvarRT') : GIvarRT
             , ('GIvarRW') : GIvarRW, ('GIvarKodePos') : GIvarKodePos, ('GIvarNegaraAsal') : GIvarNegaraAsal, ('GIvarNomorPassport') : GIvarNomorPassport

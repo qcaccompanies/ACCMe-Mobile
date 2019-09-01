@@ -97,3 +97,7 @@ Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtAgama'), 0,
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : BIvarAgama]), 0, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtStatusPerkawinan'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : BIvarStatusPerkawinan]), 0, FailureHandling.STOP_ON_FAILURE)
+
