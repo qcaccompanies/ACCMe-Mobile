@@ -1,20 +1,20 @@
 [35m[Appium][39m Welcome to Appium v1.12.1
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 64817
+[35m[Appium][39m   port: 61345
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   chromeDriverPort: 64819
-[35m[Appium][39m   tmpDir: C:\Users\15421\AppData\Local\Temp\\Katalon\Appium\Temp1567338924947
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:64817
+[35m[Appium][39m   chromeDriverPort: 61346
+[35m[Appium][39m   tmpDir: C:\Users\15421\AppData\Local\Temp\\Katalon\Appium\Temp1567346336145
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:61345
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m16 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m15 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m3 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\Users\\15421\\git\\ACCMe-Mobile\\AccMe.apk","noReset":true,"deviceId":"","deviceName":"samsung SM-A505F (Android 9)","fullReset":false,"platform":"ANDROID","newCommandTimeout":1800,"platformVersion":"9","automationName":"uiautomator2","autoGrantPermissions":true,"unicodeKeyboard":true,"platformName":"Android","udid":"RR8M30NJEFN","resetKeyboard":true,"systemPort":64839},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\15421\\git\\ACCMe-Mobile\\AccMe.apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"samsung SM-A505F (Android 9)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"9","appium:resetKeyboard":true,"appium:systemPort":64839,"appium:udid":"RR8M30NJEFN","appium:unicodeKeyboard":true}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\Users\\15421\\git\\ACCMe-Mobile\\AccMe.apk","noReset":true,"deviceId":"","deviceName":"samsung SM-A505F (Android 9)","fullReset":false,"platform":"ANDROID","newCommandTimeout":1800,"platformVersion":"9","automationName":"uiautomator2","autoGrantPermissions":true,"unicodeKeyboard":true,"platformName":"Android","udid":"RR8M30NJEFN","resetKeyboard":true,"systemPort":61367},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\15421\\git\\ACCMe-Mobile\\AccMe.apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"samsung SM-A505F (Android 9)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"9","appium:resetKeyboard":true,"appium:systemPort":61367,"appium:udid":"RR8M30NJEFN","appium:unicodeKeyboard":true}]}}[39m
 [35m[BaseDriver][39m The capabilities ["deviceId","platform"] are not standard capabilities and should have an extension prefix
 [35m[Appium][39m Appium v1.12.1 creating new AndroidUiautomator2Driver (v1.33.0) session
 [35m[Appium][39m Capabilities:
@@ -30,11 +30,11 @@
 [35m[Appium][39m   noReset: true
 [35m[Appium][39m   platformVersion: 9
 [35m[Appium][39m   resetKeyboard: true
-[35m[Appium][39m   systemPort: 64839
+[35m[Appium][39m   systemPort: 61367
 [35m[Appium][39m   udid: RR8M30NJEFN
 [35m[Appium][39m   unicodeKeyboard: true
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: deviceId, platform.
-[35m[BaseDriver][39m Session created with session id: cec883eb-8441-4eeb-9359-cc90f3cc91e7
+[35m[BaseDriver][39m Session created with session id: f1c227c2-281b-44ea-9e20-7c708deb26d4
 [35m[BaseDriver][39m Using local app 'C:\Users\15421\git\ACCMe-Mobile\AccMe.apk'
 [35m[ADB][39m Checking whether adb is present
 [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\15421\.katalon\tools\android_sdk' (newest first):
@@ -58,52 +58,54 @@
 [35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m UiAutomator2 did not start the activity we were waiting for, 'com.outsystemsenterprise.accdev1.AccMeMobile2/com.outsystemsenterprise.accdev1.AccMeMobile2.MainActivity'. Starting it ourselves
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session cec883eb-8441-4eeb-9359-cc90f3cc91e7 added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m33073 ms - 1336[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session f1c227c2-281b-44ea-9e20-7c708deb26d4 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m32143 ms - 1336[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7 [39m[32m200[39m [90m74 ms - 1268[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4 [39m[32m200[39m [90m63 ms - 1268[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7 [39m[32m200[39m [90m44 ms - 1268[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4 [39m[32m200[39m [90m45 ms - 1268[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/timeouts [39m[32m200[39m [90m7 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/timeouts [39m[32m200[39m [90m8 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (cec883eb)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 3b1b8176-2447-4f95-9bab-1a4331ea10b9 with cec883eb-8441-4eeb-9359-cc90f3cc91e7
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/source [39m[32m200[39m [90m266 ms - 2406[39m
+[35m[W3C (f1c227c2)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId ee8edd67-d389-4504-8152-c78ac466f3cf with f1c227c2-281b-44ea-9e20-7c708deb26d4
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/source [39m[32m200[39m [90m222 ms - 1973[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/screenshot [39m[32m200[39m [90m703 ms - 38142[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/screenshot [39m[32m200[39m [90m596 ms - 38472[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (cec883eb)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 3b1b8176-2447-4f95-9bab-1a4331ea10b9 with cec883eb-8441-4eeb-9359-cc90f3cc91e7
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/source [39m[32m200[39m [90m8813 ms - 85362[39m
+[35m[W3C (f1c227c2)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId ee8edd67-d389-4504-8152-c78ac466f3cf with f1c227c2-281b-44ea-9e20-7c708deb26d4
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/source [39m[32m200[39m [90m4424 ms - 77561[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7/screenshot [39m[32m200[39m [90m719 ms - 176720[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4/screenshot [39m[32m200[39m [90m1448 ms - 1234892[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[Appium][39m Removing session cec883eb-8441-4eeb-9359-cc90f3cc91e7 from our master session list
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7[39m
+[35m[Appium][39m Removing session f1c227c2-281b-44ea-9e20-7c708deb26d4 from our master session list
+[35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7 [39m[33m404[39m [90m38 ms - 3205[39m
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4 [39m[33m404[39m [90m44 ms - 3205[39m
 [35m[HTTP][39m [90m[39m
 [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/cec883eb-8441-4eeb-9359-cc90f3cc91e7 [39m[32m200[39m [90m2926 ms - 14[39m
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/f1c227c2-281b-44ea-9e20-7c708deb26d4 [39m[32m200[39m [90m2779 ms - 14[39m
 [35m[HTTP][39m [90m[39m

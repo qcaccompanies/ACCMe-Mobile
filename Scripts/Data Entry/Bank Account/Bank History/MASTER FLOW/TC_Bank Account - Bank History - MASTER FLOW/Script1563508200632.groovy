@@ -26,7 +26,7 @@ Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAcco
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: if (varTambahBankHistory == 'Y') {
+if (varTambahBankHistory == 'Y') {
     Mobile.tap(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_BtnTambahBankHistory'), 
         0)
 

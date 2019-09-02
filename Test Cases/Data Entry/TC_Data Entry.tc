@@ -125,18 +125,18 @@
       <name>varKodePaket</name>
    </variable>
    <variable>
-      <defaultValue>'\'522788992000288772'</defaultValue>
-      <description></description>
-      <id>9e80df2d-22bf-4b44-997c-bd55e334fb60</id>
-      <masked>false</masked>
-      <name>varNoKontrakExisting</name>
-   </variable>
-   <variable>
       <defaultValue>'305001'</defaultValue>
       <description></description>
       <id>b03e9b83-853b-455f-8061-fae620e6f75a</id>
       <masked>false</masked>
       <name>varAsuransi</name>
+   </variable>
+   <variable>
+      <defaultValue>'522788992000288772'</defaultValue>
+      <description></description>
+      <id>9e80df2d-22bf-4b44-997c-bd55e334fb60</id>
+      <masked>false</masked>
+      <name>varNoKontrakExisting</name>
    </variable>
    <variable>
       <defaultValue>'BANTEN, DKI, JABAR'</defaultValue>
@@ -2323,7 +2323,7 @@
       <name>GUvarJenisSosmed</name>
    </variable>
    <variable>
-      <defaultValue>'MAJUTERUS'</defaultValue>
+      <defaultValue>'FACEBOOK'</defaultValue>
       <description></description>
       <id>ee3a8ba9-c794-4cdd-bf80-31323edd94b7</id>
       <masked>false</masked>

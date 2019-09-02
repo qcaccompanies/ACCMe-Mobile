@@ -16,26 +16,26 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('dynamic test case/open application'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //simulasi kredit
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW'), 
+WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW'), 
     [('varBrand') : varBrand, ('varType') : varType, ('varModel') : varModel, ('varTahun') : varTahun, ('varTenor') : varTenor
         , ('varOTR') : varOTR, ('varRP') : varRP, ('varDealer') : varDealer, ('varSales') : varSales, ('varTipePembiayaan') : varTipePembiayaan
         , ('varPembiayaan') : varPembiayaan, ('varUsedCar') : varUsedCar, ('varTopup') : varTopup, ('varADDMdanADDB') : varADDMdanADDB
         , ('varACP') : varACP, ('varPaket') : varPaket, ('varKodePaket') : varKodePaket, ('varNoKontrakExisting') : varNoKontrakExisting], 
     FailureHandling.OPTIONAL)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW'), 
+WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW'), 
     [('varAsuransi') : varAsuransi, ('varKodeWilayah') : varKodeWilayah, ('varTipeAsuransi') : varTipeAsuransi, ('varPenggunaanUnit') : varPenggunaanUnit
         , ('varPembayaranAsuransi') : varPembayaranAsuransi], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW'), 
+WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW'), 
     [('varTipeAplikasi') : 'CF', ('varTipePelanggan') : 'personal', ('varObjekPembiayaan') : 'PB', ('varTujuanPembiayaan') : 'produktif'
         , ('varJaminanPembiayaan') : 'MOBIL', ('varOpsiNPWP') : 'Approval'], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW'), 
-    [('varTipeAngsuran') : varTipeAngsuran], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW'), [('varTipeAngsuran') : varTipeAngsuran], 
+    FailureHandling.STOP_ON_FAILURE)
 
 // upload foto
-not_run: if (varUploadBorrower == 'Y') {
+if (varUploadBorrower == 'Y') {
     WebUI.callTestCase(findTestCase('Data Entry/Upload Document/Borrower/MASTER FLOW/TC_Upload Document - borrower - MASTER FLOW'), 
         [('Borrower_varKTP') : Borrower_varKTP, ('Borrower_varSelfie') : Borrower_varSelfie, ('Borrower_varWefie') : Borrower_varWefie
             , ('Borrower_varKartuKeluarga') : Borrower_varKartuKeluarga, ('Borrower_varSim') : Borrower_varSim, ('Borrower_varNPWP') : Borrower_varNPWP
@@ -46,7 +46,7 @@ not_run: if (varUploadBorrower == 'Y') {
         FailureHandling.STOP_ON_FAILURE)
 }
 
-not_run: if (varUploadCoborrower == 'Y') {
+if (varUploadCoborrower == 'Y') {
     WebUI.callTestCase(findTestCase('Data Entry/Upload Document/Coborrower/MASTER FLOW/TC_Upload Document - co borrower - MASTER FLOW'), 
         [('CoBorrower_varKTP') : CoBorrower_varKTP, ('CoBorrower_varSelfie') : CoBorrower_varSelfie, ('CoBorrower_varWefie') : CoBorrower_varWefie
             , ('CoBorrower_varSim') : CoBorrower_varSim, ('CoBorrower_varNPWP') : CoBorrower_varNPWP, ('CoBorrower_varSTNK') : CoBorrower_varSTNK
@@ -57,7 +57,7 @@ not_run: if (varUploadCoborrower == 'Y') {
             , ('CoBorrower_varUploadKK') : CoBorrower_varUploadKK], FailureHandling.STOP_ON_FAILURE)
 }
 
-not_run: if (varUploadGuarantor == 'Y') {
+if (varUploadGuarantor == 'Y') {
     WebUI.callTestCase(findTestCase('Data Entry/Upload Document/Guarantor/MASTER FLOW/TC_Upload Document - guarantor - MASTER FLOW'), 
         [('Guarantor_varKTP') : Guarantor_varKTP, ('Guarantor_varSelfie') : Guarantor_varSelfie, ('Guarantor_varWefie') : Guarantor_varWefie
             , ('Guarantor_varKartuKeluarga') : Guarantor_varKartuKeluarga, ('Guarantor_varSim') : Guarantor_varSim, ('Guarantor_varNPWP') : Guarantor_varNPWP
@@ -68,18 +68,18 @@ not_run: if (varUploadGuarantor == 'Y') {
             , ('Guarantor_varUploadSlipGaji') : Guarantor_varUploadSlipGaji], FailureHandling.STOP_ON_FAILURE)
 }
 
-not_run: if (varUploadSales == 'Y') {
+if (varUploadSales == 'Y') {
     WebUI.callTestCase(findTestCase('Data Entry/Upload Document/Sales/MASTER FLOW/TC_Upload Document - sales - MASTER FLOW'), 
         [('Sales_varKTP') : Sales_varKTP, ('Sales_varUploadKTP') : Sales_varUploadKTP], FailureHandling.STOP_ON_FAILURE)
 }
 
-not_run: CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
+CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
 
-not_run: Mobile.waitForElementPresent(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.waitForElementPresent(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Data Entry/Borrower/Flow Borrower'), [('BvarPekerjaanTab') : BvarPekerjaanTab, ('BvarUsahaTab') : BvarUsahaTab
         , ('BIvarTahun') : BIvarTahun, ('BIvarNoKTP') : BIvarNoKTP, ('BIvarNamaSesuaiIdentitas') : BIvarNamaSesuaiIdentitas
@@ -116,7 +116,7 @@ Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-if (AllStatusPerkawinan == 'Married') {
+not_run: if (AllStatusPerkawinan == 'Married') {
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
@@ -150,7 +150,7 @@ if (AllStatusPerkawinan == 'Married') {
     Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 }
 
-if (AllGuarantor == 'Ya') {
+not_run: if (AllGuarantor == 'Ya') {
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
