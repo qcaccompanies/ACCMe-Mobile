@@ -18,6 +18,8 @@ Mobile.tap(findTestObject('Bank Account/TAB/BankAccount_TabBankHistory'), 0)
 Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_InpNamaBank'), varNamaBank, 
     0)
 
+Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : varNamaBank]), 0)
+
 Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_InpNomorRekening'), varNomorRekening, 
     0)
 
