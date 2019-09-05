@@ -184,7 +184,7 @@ Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW'), [('varPenghasilanKotorSatu') : varPenghasilanKotorSatu
         , ('varPenghasilanKotorDua') : varPenghasilanKotorDua, ('varPenghasilanKotorTiga') : varPenghasilanKotorTiga, ('varJenisPekerjaanAtauUsahaSatu') : varJenisPekerjaanAtauUsahaSatu
@@ -206,7 +206,9 @@ WebUI.callTestCase(findTestCase('Data Entry/Bank Account/Bank History/MASTER FLO
 
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 

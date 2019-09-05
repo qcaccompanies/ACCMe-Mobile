@@ -58,7 +58,11 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Simulasi Kredit-LOVBrand'), 0)
 
+Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Type'), 0)
+
 Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Type'), varType, 0)
+
+WebUI.delay(3)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Type'), 0)
 
@@ -67,6 +71,8 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Model'), 0)
+
+Mobile.scrollToText(varModel, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : varModel]), 0)
 
@@ -100,17 +106,10 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.5, 0.2, 1000)
 
-Mobile.tapAtPosition(1000, 500)
-
 Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), varDealer, 
     0)
 
 Mobile.delay(4, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.clearText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), varDealer, 
-    0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_LOV Dealer'), 0)
 
@@ -118,6 +117,8 @@ not_run: Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simula
     varSales, 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 0)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.4, 0.3, 1000)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_LOV Sales Dealer'), 0)
 

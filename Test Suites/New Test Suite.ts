@@ -19,8 +19,8 @@
          <combinationType>MANY</combinationType>
          <id>f81e7b02-393b-4640-8ef6-148449f02cfa</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-4</value>
          </iterationEntity>
          <testDataId>Data Files/DATA ENTRY - borrower data</testDataId>
       </testDataLink>
@@ -1219,30 +1219,6 @@
          <variableId>601bd832-5e1f-43d2-a458-39f47197462c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarNegaraAsal</value>
-         <variableId>28a1e2eb-915c-4cf5-bb63-5abced402495</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarNomorPassport</value>
-         <variableId>ccbee058-e489-44c5-b9d3-5e07058b8eb9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarKewarganegaraan</value>
-         <variableId>53cfc52a-b796-4ea1-9e45-447f9b5070f2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarMasaBerlaku</value>
-         <variableId>636090b9-aa5d-4b14-a061-e364a9041fe9</variableId>
-      </variableLink>
-      <variableLink>
          <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CIvarVerifikasi</value>
@@ -1609,18 +1585,6 @@
          <variableId>090e2d36-99c6-447e-9a7a-e85f65b1bfb1</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CvarPekerjaanTab</value>
-         <variableId>06e14eb8-ec98-4b3f-8a70-487cd0452432</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CvarUsahaTab</value>
-         <variableId>ad692194-3a17-4e41-8d34-87a42b75fa32</variableId>
-      </variableLink>
-      <variableLink>
          <testDataLinkId>d7056d8b-e4cb-46ae-af1f-9282b24997d4</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>GIvarNIK</value>
@@ -1637,72 +1601,6 @@
          <type>DATA_COLUMN</type>
          <value>GIvarStatus</value>
          <variableId>7efa81d2-24c9-4848-b0e1-88d755439ee2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarNamaSesuaiIdentitas</value>
-         <variableId>82cc510c-335b-4f72-8420-719aef968160</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarTempatLahir</value>
-         <variableId>275483b5-d526-46c2-aa13-28509d0ee19b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarAlamatLengkap</value>
-         <variableId>5b6a52f2-13bb-45a0-a800-04f9027f2d73</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarRT</value>
-         <variableId>2a720b5c-752c-4222-adb6-bfd3f74fa782</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarRW</value>
-         <variableId>91c6c93a-69c6-4757-b722-4f1f3dd8a444</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarKodePos</value>
-         <variableId>1827d022-2c57-480d-bf7f-5df017db3078</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarNegaraAsal</value>
-         <variableId>28a1e2eb-915c-4cf5-bb63-5abced402495</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarNomorPassport</value>
-         <variableId>ccbee058-e489-44c5-b9d3-5e07058b8eb9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarKewarganegaraan</value>
-         <variableId>53cfc52a-b796-4ea1-9e45-447f9b5070f2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>f81e7b02-393b-4640-8ef6-148449f02cfa</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>BIvarMasaBerlaku</value>
-         <variableId>636090b9-aa5d-4b14-a061-e364a9041fe9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CIvarVerifikasi</value>
-         <variableId>a9551adb-611f-432f-a32a-133ecfceb065</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d7056d8b-e4cb-46ae-af1f-9282b24997d4</testDataLinkId>
@@ -1799,42 +1697,6 @@
          <type>DATA_COLUMN</type>
          <value>GDvarStatusTT</value>
          <variableId>9cac44af-40b5-4a08-ab07-7048b8930bbb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarAlamatLengkap</value>
-         <variableId>1af1bbcf-764a-4583-8012-5392aac9abf7</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarRT</value>
-         <variableId>8cdaea8a-4e20-4aa7-ad58-814fb71fa332</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarRW</value>
-         <variableId>1a4b1658-1962-48ae-9e48-51f7d094e40c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarKodePos</value>
-         <variableId>bc11f2d0-3286-4a68-a8c5-b03b6f5052fc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarNoTlp1</value>
-         <variableId>5ee5de75-2b48-4e96-9f01-5b45c1676849</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9d69101a-f81e-4adf-abcf-7a8fe224b0a1</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CDvarNoTlp2</value>
-         <variableId>526c5b7a-3dc7-44aa-b6d0-40962afe90eb</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d7056d8b-e4cb-46ae-af1f-9282b24997d4</testDataLinkId>

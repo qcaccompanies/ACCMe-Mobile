@@ -73,7 +73,7 @@ Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpExt')
 
 Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpTeleponSeluler'), BUvarTeleponSeluler, 0)
 
-Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpWebsite'), BUvarWebsite, 0)
+not_run: Mobile.setText(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_InpWebsite'), BUvarWebsite, 0)
 
 not_run: Mobile.tap(findTestObject('Borrower/Borrower - Usaha/Borrower_Usaha_TxtJenisAkunSosialMedia'), 0)
 
