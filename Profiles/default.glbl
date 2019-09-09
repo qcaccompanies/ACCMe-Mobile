@@ -9,4 +9,14 @@
       <initValue>'AccMe.apk'</initValue>
       <name>apkname</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>60</initValue>
+      <name>gapXTLO</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>78</initValue>
+      <name>gapYTLO</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

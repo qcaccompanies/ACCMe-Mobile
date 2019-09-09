@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Loan Detail/LoanDetail_SubsidiRate'), 0)
+CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 600)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -24,6 +24,8 @@ if (varTipeAngsuran == 'regular') {
 }
 
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
+
+Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Loan Detail/LoanDetail_Hitung'), 0)
 

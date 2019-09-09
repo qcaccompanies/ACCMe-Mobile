@@ -101,4 +101,24 @@ public class picklist {
 			}
 		}
 	}
+	
+	@Keyword
+	def Listsamping(listObject, FailureHandling failureHandling = FailureHandling.STOP_ON_FAILURE) {
+		try {
+
+			def elementYPosition = Mobile.getElementTopPosition(listObject, 0)
+
+			def elementXPosition = Mobile.getElementLeftPosition(listObject, 0)
+
+
+			Mobile.tapAtPosition(elementXPosition - 60, elementYPosition - 78)
+		} catch (Exception e) {
+			if (failureHandling == FailureHandling.STOP_ON_FAILURE) {
+				//				throw new AssertionError('ERROR: There was an error while trying to execute the keyword')
+				KeywordUtil.markFailed("Something wrong with the keyword" + e.message)
+			} else if (failureHandling == FailureHandling.CONTINUE_ON_FAILURE) {
+				KeywordUtil.logInfo('There was an exception but the process will continue');
+			}
+		}
+	}
 }

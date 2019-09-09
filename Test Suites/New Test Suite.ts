@@ -19,7 +19,7 @@
          <combinationType>MANY</combinationType>
          <id>f81e7b02-393b-4640-8ef6-148449f02cfa</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>ALL</iterationType>
             <value>1-4</value>
          </iterationEntity>
          <testDataId>Data Files/DATA ENTRY - borrower data</testDataId>

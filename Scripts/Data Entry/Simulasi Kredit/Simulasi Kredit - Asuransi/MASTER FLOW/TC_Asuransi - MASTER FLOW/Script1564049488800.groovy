@@ -37,10 +37,12 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_K
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : varKodeWilayah]), 0)
 
-if (varPembayaranAsuransi == 'AR') {
-    Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_PmbyrnAsuransi AR'), 0)
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
 
-    Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Pmbyrn Asuransi Cash2'), 0)
+if (varPembayaranAsuransi == 'AR') {
+    Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/asuransi_BtnARPlus'), 0)
+
+    Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/asuransi_BtnCashPlus'), 0)
 } else {
     Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_PmbyrnAsuransi TLO'), 0)
 
@@ -48,6 +50,8 @@ if (varPembayaranAsuransi == 'AR') {
 }
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Hitung'), 0)
 

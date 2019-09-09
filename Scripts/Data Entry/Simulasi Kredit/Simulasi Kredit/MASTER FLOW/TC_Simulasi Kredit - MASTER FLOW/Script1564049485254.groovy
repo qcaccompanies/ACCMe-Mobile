@@ -13,6 +13,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+Mobile.waitForElementPresent(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 
+    0)
+
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 0)
 
 if (varPembiayaan == 'NewCar') {
@@ -52,6 +55,8 @@ if (varPaket == 'ya') {
     Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : varKodePaket]), 0)
 }
 
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
+
 Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Brand'), varBrand, 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Brand'), 0)
@@ -68,7 +73,7 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Type LOV'), 0)
 
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Model'), 0)
 
@@ -102,9 +107,14 @@ if (varACP == 'credit') {
     Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp ACP None'), 0)
 }
 
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.5, 0.2, 1000)
+
+Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), varDealer, 
+    0)
+
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), 0)
 
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.5, 0.2, 1000)
+Mobile.clearText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), 0)
 
 Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Dealer'), varDealer, 
     0)
@@ -116,9 +126,9 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 not_run: Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 
     varSales, 0)
 
-Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 0)
-
 CustomKeywords.'mobile.mobileSwipe.UpDown'(0.4, 0.3, 1000)
+
+Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_LOV Sales Dealer'), 0)
 
