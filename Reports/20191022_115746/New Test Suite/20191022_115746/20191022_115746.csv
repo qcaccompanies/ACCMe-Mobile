@@ -1,0 +1,166 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,2019-10-22 11:57:55,2019-10-22 13:12:46,1h - 14m - 51.422s,ERROR
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 11:58:00,2019-10-22 12:01:28,3m - 27.750s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 11:58:20,2019-10-22 11:59:26,1m - 5.966s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 11:59:26,2019-10-22 12:00:48,1m - 21.808s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:00:48,2019-10-22 12:01:25,36.616s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:01:25,2019-10-22 12:01:28,3.574s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:01:34,2019-10-22 12:05:37,4m - 2.965s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:01:35,2019-10-22 12:02:51,1m - 15.648s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:02:51,2019-10-22 12:04:57,2m - 6.476s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:04:57,2019-10-22 12:05:33,36.149s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:05:33,2019-10-22 12:05:37,3.506s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:05:43,2019-10-22 12:19:52,14m - 8.818s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:05:44,2019-10-22 12:06:58,1m - 13.569s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:06:58,2019-10-22 12:08:43,1m - 45.499s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:08:43,2019-10-22 12:09:25,41.356s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW""), [""varTipeAplikasi"":""CF"", ""varTipePelanggan"":""personal"", ""varObjekPembiayaan"":""PB"", ""varTujuanPembiayaan"":""produktif"", ""varJaminanPembiayaan"":""MOBIL"", ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:09:25,2019-10-22 12:09:45,20.680s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW""), [""varTipeAngsuran"":varTipeAngsuran], STOP_ON_FAILURE)",,,,2019-10-22 12:09:45,2019-10-22 12:10:26,41.010s,PASSED
+"if (varUploadBorrower == ""Y"")",,,,2019-10-22 12:10:26,2019-10-22 12:10:41,14.200s,PASSED
+"if (varUploadCoborrower == ""Y"")",,,,2019-10-22 12:10:41,2019-10-22 12:10:41,0.000s,PASSED
+"if (varUploadGuarantor == ""Y"")",,,,2019-10-22 12:10:41,2019-10-22 12:10:41,0.001s,PASSED
+"if (varUploadSales == ""Y"")",,,,2019-10-22 12:10:41,2019-10-22 12:10:41,0.000s,PASSED
+"mobile.mobileSwipe.RightLeft(0.9, 0.5, 1000)",,,,2019-10-22 12:10:41,2019-10-22 12:10:45,4.522s,PASSED
+"waitForElementPresent(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:10:45,2019-10-22 12:10:46,1.295s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:10:46,2019-10-22 12:10:48,1.965s,PASSED
+"callTestCase(findTestCase(""Data Entry/Borrower/Flow Borrower""), [""BvarPekerjaanTab"":BvarPekerjaanTab, ""BvarUsahaTab"":BvarUsahaTab, ""BIvarTahun"":BIvarTahun, ""BIvarNoKTP"":BIvarNoKTP, ""BIvarNamaSesuaiIdentitas"":BIvarNamaSesuaiIdentitas, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:10:48,2019-10-22 12:17:15,6m - 26.607s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:17:15,2019-10-22 12:17:25,10.004s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:17:25,2019-10-22 12:17:30,4.490s,PASSED
+"verifyElementVisible(findTestObject(""Borrower/TxtSemuaDataSudahDiisi""), 80, OPTIONAL)",,,,2019-10-22 12:17:30,2019-10-22 12:17:37,7.620s,PASSED
+"if (AllStatusPerkawinan == ""Married"")",,,,2019-10-22 12:17:37,2019-10-22 12:17:37,0.001s,NOT_RUN
+"if (AllGuarantor == ""Ya"")",,,,2019-10-22 12:17:37,2019-10-22 12:17:37,0.000s,NOT_RUN
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:17:37,2019-10-22 12:17:47,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:17:47,2019-10-22 12:17:52,4.346s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:17:52,2019-10-22 12:18:02,10.002s,PASSED
+"callTestCase(findTestCase(""Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW""), [""varPenghasilanKotorSatu"":varPenghasilanKotorSatu, ""varPenghasilanKotorDua"":varPenghasilanKotorDua, ""varPenghasilanKotorTiga"":varPenghasilanKotorTiga, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:18:02,2019-10-22 12:18:16,14.862s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW""), [""varNamaCabang"":varNamaCabang, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varSumberDanaBilaTidakBekerja"":varSumberDanaBilaTidakBekerja, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:18:16,2019-10-22 12:18:30,13.570s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW""), [""varNamaBank"":varNamaBank, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varBulan"":varBulan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:18:30,2019-10-22 12:18:53,23.431s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:18:53,2019-10-22 12:18:56,2.159s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:18:56,2019-10-22 12:19:06,10.002s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:19:06,2019-10-22 12:19:16,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:19:16,2019-10-22 12:19:49,33.606s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:19:49,2019-10-22 12:19:52,2.571s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:19:56,2019-10-22 12:22:05,2m - 8.823s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:19:57,2019-10-22 12:21:03,1m - 6.287s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:21:03,2019-10-22 12:21:59,55.883s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:21:59,2019-10-22 12:22:02,3.088s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:22:02,2019-10-22 12:22:05,2.628s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:22:10,2019-10-22 12:37:09,14m - 59.506s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:22:10,2019-10-22 12:23:20,1m - 10.064s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:23:20,2019-10-22 12:25:06,1m - 45.811s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:25:06,2019-10-22 12:25:55,48.766s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW""), [""varTipeAplikasi"":""CF"", ""varTipePelanggan"":""personal"", ""varObjekPembiayaan"":""PB"", ""varTujuanPembiayaan"":""produktif"", ""varJaminanPembiayaan"":""MOBIL"", ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:25:55,2019-10-22 12:26:17,21.542s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW""), [""varTipeAngsuran"":varTipeAngsuran], STOP_ON_FAILURE)",,,,2019-10-22 12:26:17,2019-10-22 12:27:39,1m - 22.291s,PASSED
+"if (varUploadBorrower == ""Y"")",,,,2019-10-22 12:27:39,2019-10-22 12:27:52,12.876s,PASSED
+"if (varUploadCoborrower == ""Y"")",,,,2019-10-22 12:27:52,2019-10-22 12:27:52,0.000s,PASSED
+"if (varUploadGuarantor == ""Y"")",,,,2019-10-22 12:27:52,2019-10-22 12:27:52,0.001s,PASSED
+"if (varUploadSales == ""Y"")",,,,2019-10-22 12:27:52,2019-10-22 12:27:52,0.000s,PASSED
+"mobile.mobileSwipe.RightLeft(0.9, 0.5, 1000)",,,,2019-10-22 12:27:52,2019-10-22 12:27:57,4.943s,PASSED
+"waitForElementPresent(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:27:57,2019-10-22 12:27:58,1.475s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:27:58,2019-10-22 12:28:01,2.574s,PASSED
+"callTestCase(findTestCase(""Data Entry/Borrower/Flow Borrower""), [""BvarPekerjaanTab"":BvarPekerjaanTab, ""BvarUsahaTab"":BvarUsahaTab, ""BIvarTahun"":BIvarTahun, ""BIvarNoKTP"":BIvarNoKTP, ""BIvarNamaSesuaiIdentitas"":BIvarNamaSesuaiIdentitas, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:28:01,2019-10-22 12:34:27,6m - 26.662s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:34:27,2019-10-22 12:34:37,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:34:37,2019-10-22 12:34:41,3.764s,PASSED
+"verifyElementVisible(findTestObject(""Borrower/TxtSemuaDataSudahDiisi""), 80, OPTIONAL)",,,,2019-10-22 12:34:41,2019-10-22 12:34:59,17.514s,PASSED
+"if (AllStatusPerkawinan == ""Married"")",,,,2019-10-22 12:34:59,2019-10-22 12:34:59,0.000s,NOT_RUN
+"if (AllGuarantor == ""Ya"")",,,,2019-10-22 12:34:59,2019-10-22 12:34:59,0.000s,NOT_RUN
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:34:59,2019-10-22 12:35:09,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:35:09,2019-10-22 12:35:13,4.274s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:35:13,2019-10-22 12:35:23,10.002s,PASSED
+"callTestCase(findTestCase(""Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW""), [""varPenghasilanKotorSatu"":varPenghasilanKotorSatu, ""varPenghasilanKotorDua"":varPenghasilanKotorDua, ""varPenghasilanKotorTiga"":varPenghasilanKotorTiga, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:35:23,2019-10-22 12:35:37,13.589s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW""), [""varNamaCabang"":varNamaCabang, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varSumberDanaBilaTidakBekerja"":varSumberDanaBilaTidakBekerja, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:35:37,2019-10-22 12:35:49,12.663s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW""), [""varNamaBank"":varNamaBank, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varBulan"":varBulan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:35:49,2019-10-22 12:36:11,22.277s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:36:11,2019-10-22 12:36:13,1.952s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:36:13,2019-10-22 12:36:23,10.003s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:36:23,2019-10-22 12:36:33,10.003s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:36:33,2019-10-22 12:37:07,33.176s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:37:07,2019-10-22 12:37:09,2.472s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:37:14,2019-10-22 12:37:47,32.424s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:37:15,2019-10-22 12:37:47,31.471s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:37:47,2019-10-22 12:37:47,0.003s,ERROR
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:37:50,2019-10-22 12:44:44,6m - 53.870s,FAILED
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:37:50,2019-10-22 12:38:41,50.948s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:38:41,2019-10-22 12:40:42,2m - 0.544s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:40:42,2019-10-22 12:41:44,1m - 1.949s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW""), [""varTipeAplikasi"":""CF"", ""varTipePelanggan"":""personal"", ""varObjekPembiayaan"":""PB"", ""varTujuanPembiayaan"":""produktif"", ""varJaminanPembiayaan"":""MOBIL"", ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:41:44,2019-10-22 12:42:03,19.346s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW""), [""varTipeAngsuran"":varTipeAngsuran], STOP_ON_FAILURE)",,,,2019-10-22 12:42:03,2019-10-22 12:42:45,41.358s,PASSED
+"if (varUploadBorrower == ""Y"")",,,,2019-10-22 12:42:45,2019-10-22 12:42:56,11.393s,PASSED
+"if (varUploadCoborrower == ""Y"")",,,,2019-10-22 12:42:56,2019-10-22 12:42:56,0.001s,PASSED
+"if (varUploadGuarantor == ""Y"")",,,,2019-10-22 12:42:56,2019-10-22 12:42:56,0.000s,PASSED
+"if (varUploadSales == ""Y"")",,,,2019-10-22 12:42:56,2019-10-22 12:42:56,0.000s,PASSED
+"mobile.mobileSwipe.RightLeft(0.9, 0.5, 1000)",,,,2019-10-22 12:42:56,2019-10-22 12:43:01,4.712s,PASSED
+"waitForElementPresent(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:43:01,2019-10-22 12:43:02,1.559s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:43:02,2019-10-22 12:43:04,1.998s,PASSED
+"callTestCase(findTestCase(""Data Entry/Borrower/Flow Borrower""), [""BvarPekerjaanTab"":BvarPekerjaanTab, ""BvarUsahaTab"":BvarUsahaTab, ""BIvarTahun"":BIvarTahun, ""BIvarNoKTP"":BIvarNoKTP, ""BIvarNamaSesuaiIdentitas"":BIvarNamaSesuaiIdentitas, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:43:04,2019-10-22 12:44:40,1m - 36.199s,FAILED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:44:40,2019-10-22 12:44:44,3.351s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:44:49,2019-10-22 12:58:16,13m - 26.902s,ERROR
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:44:50,2019-10-22 12:45:56,1m - 6.556s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:45:56,2019-10-22 12:47:40,1m - 44.077s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:47:40,2019-10-22 12:48:21,41.063s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW""), [""varTipeAplikasi"":""CF"", ""varTipePelanggan"":""personal"", ""varObjekPembiayaan"":""PB"", ""varTujuanPembiayaan"":""produktif"", ""varJaminanPembiayaan"":""MOBIL"", ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:48:21,2019-10-22 12:48:42,20.807s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW""), [""varTipeAngsuran"":varTipeAngsuran], STOP_ON_FAILURE)",,,,2019-10-22 12:48:42,2019-10-22 12:49:23,40.931s,PASSED
+"if (varUploadBorrower == ""Y"")",,,,2019-10-22 12:49:23,2019-10-22 12:49:36,12.640s,PASSED
+"if (varUploadCoborrower == ""Y"")",,,,2019-10-22 12:49:36,2019-10-22 12:49:36,0.000s,PASSED
+"if (varUploadGuarantor == ""Y"")",,,,2019-10-22 12:49:36,2019-10-22 12:49:36,0.000s,PASSED
+"if (varUploadSales == ""Y"")",,,,2019-10-22 12:49:36,2019-10-22 12:49:36,0.000s,PASSED
+"mobile.mobileSwipe.RightLeft(0.9, 0.5, 1000)",,,,2019-10-22 12:49:36,2019-10-22 12:49:40,4.705s,PASSED
+"waitForElementPresent(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:49:40,2019-10-22 12:49:41,0.769s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:49:41,2019-10-22 12:49:44,2.583s,PASSED
+"callTestCase(findTestCase(""Data Entry/Borrower/Flow Borrower""), [""BvarPekerjaanTab"":BvarPekerjaanTab, ""BvarUsahaTab"":BvarUsahaTab, ""BIvarTahun"":BIvarTahun, ""BIvarNoKTP"":BIvarNoKTP, ""BIvarNamaSesuaiIdentitas"":BIvarNamaSesuaiIdentitas, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:49:44,2019-10-22 12:56:12,6m - 28.083s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:56:12,2019-10-22 12:56:22,10.003s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:56:22,2019-10-22 12:56:26,3.951s,PASSED
+"verifyElementVisible(findTestObject(""Borrower/TxtSemuaDataSudahDiisi""), 80, OPTIONAL)",,,,2019-10-22 12:56:26,2019-10-22 12:56:33,7.517s,PASSED
+"if (AllStatusPerkawinan == ""Married"")",,,,2019-10-22 12:56:33,2019-10-22 12:56:33,0.001s,NOT_RUN
+"if (AllGuarantor == ""Ya"")",,,,2019-10-22 12:56:33,2019-10-22 12:56:33,0.000s,NOT_RUN
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:56:33,2019-10-22 12:56:43,10.003s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:56:43,2019-10-22 12:56:48,5.110s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:56:48,2019-10-22 12:56:58,10.002s,PASSED
+"callTestCase(findTestCase(""Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW""), [""varPenghasilanKotorSatu"":varPenghasilanKotorSatu, ""varPenghasilanKotorDua"":varPenghasilanKotorDua, ""varPenghasilanKotorTiga"":varPenghasilanKotorTiga, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:56:58,2019-10-22 12:57:12,14.009s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW""), [""varNamaCabang"":varNamaCabang, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varSumberDanaBilaTidakBekerja"":varSumberDanaBilaTidakBekerja, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:57:12,2019-10-22 12:57:26,13.508s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW""), [""varNamaBank"":varNamaBank, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varBulan"":varBulan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:57:26,2019-10-22 12:57:49,22.994s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:57:49,2019-10-22 12:57:51,1.932s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:57:51,2019-10-22 12:58:01,10.003s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 12:58:01,2019-10-22 12:58:11,10.003s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 12:58:11,2019-10-22 12:58:13,2.008s,PASSED
+"callTestCase(findTestCase(""Data Entry/Data Asset/MASTER FLOW/TC_Data Asset - MASTER FLOW""), [""varNomorRangka"":varNomorRangka, ""varNomorMesin"":varNomorMesin, ""varNamaBPKB"":varNamaBPKB, ""varNomorBPKB"":varNomorBPKB, ""varNomorPolisiDepan"":varNomorPolisiDepan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 12:58:13,2019-10-22 12:58:13,0.016s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 12:58:13,2019-10-22 12:58:16,2.889s,PASSED
+,,,,,,,
+Test Cases/Data Entry/TC_Data Entry,,test case data entry dari awal simulasi kredit hingga submit,,2019-10-22 12:58:21,2019-10-22 13:12:46,14m - 25.564s,ERROR
+"callTestCase(findTestCase(""dynamic test case/open application""), [:], STOP_ON_FAILURE)",,,,2019-10-22 12:58:22,2019-10-22 12:59:29,1m - 7.372s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW""), [""varBrand"":varBrand, ""varType"":varType, ""varModel"":varModel, ""varTahun"":varTahun, ""varTenor"":varTenor, ""varOTR"":varOTR, ""varRP"":varRP, ... ], OPTIONAL)",,,,2019-10-22 12:59:29,2019-10-22 13:01:12,1m - 42.414s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW""), [""varAsuransi"":varAsuransi, ""varKodeWilayah"":varKodeWilayah, ""varTipeAsuransi"":varTipeAsuransi, ""varPenggunaanUnit"":varPenggunaanUnit, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:01:12,2019-10-22 13:02:54,1m - 42.635s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW""), [""varTipeAplikasi"":""CF"", ""varTipePelanggan"":""personal"", ""varObjekPembiayaan"":""PB"", ""varTujuanPembiayaan"":""produktif"", ""varJaminanPembiayaan"":""MOBIL"", ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:02:54,2019-10-22 13:03:14,19.498s,PASSED
+"callTestCase(findTestCase(""Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW""), [""varTipeAngsuran"":varTipeAngsuran], STOP_ON_FAILURE)",,,,2019-10-22 13:03:14,2019-10-22 13:03:58,44.384s,PASSED
+"if (varUploadBorrower == ""Y"")",,,,2019-10-22 13:03:58,2019-10-22 13:04:10,11.359s,PASSED
+"if (varUploadCoborrower == ""Y"")",,,,2019-10-22 13:04:10,2019-10-22 13:04:10,0.000s,PASSED
+"if (varUploadGuarantor == ""Y"")",,,,2019-10-22 13:04:10,2019-10-22 13:04:10,0.000s,PASSED
+"if (varUploadSales == ""Y"")",,,,2019-10-22 13:04:10,2019-10-22 13:04:10,0.000s,PASSED
+"mobile.mobileSwipe.RightLeft(0.9, 0.5, 1000)",,,,2019-10-22 13:04:10,2019-10-22 13:04:14,4.678s,PASSED
+"waitForElementPresent(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:04:14,2019-10-22 13:04:16,1.499s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:04:16,2019-10-22 13:04:18,1.907s,PASSED
+"callTestCase(findTestCase(""Data Entry/Borrower/Flow Borrower""), [""BvarPekerjaanTab"":BvarPekerjaanTab, ""BvarUsahaTab"":BvarUsahaTab, ""BIvarTahun"":BIvarTahun, ""BIvarNoKTP"":BIvarNoKTP, ""BIvarNamaSesuaiIdentitas"":BIvarNamaSesuaiIdentitas, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:04:18,2019-10-22 13:10:43,6m - 25.648s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 13:10:43,2019-10-22 13:10:53,10.003s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:10:53,2019-10-22 13:10:57,3.656s,PASSED
+"verifyElementVisible(findTestObject(""Borrower/TxtSemuaDataSudahDiisi""), 80, OPTIONAL)",,,,2019-10-22 13:10:57,2019-10-22 13:11:04,7.325s,PASSED
+"if (AllStatusPerkawinan == ""Married"")",,,,2019-10-22 13:11:04,2019-10-22 13:11:04,0.000s,NOT_RUN
+"if (AllGuarantor == ""Ya"")",,,,2019-10-22 13:11:04,2019-10-22 13:11:04,0.000s,NOT_RUN
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 13:11:04,2019-10-22 13:11:14,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:11:14,2019-10-22 13:11:20,5.304s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 13:11:20,2019-10-22 13:11:30,10.002s,PASSED
+"callTestCase(findTestCase(""Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW""), [""varPenghasilanKotorSatu"":varPenghasilanKotorSatu, ""varPenghasilanKotorDua"":varPenghasilanKotorDua, ""varPenghasilanKotorTiga"":varPenghasilanKotorTiga, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:11:30,2019-10-22 13:11:42,12.782s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW""), [""varNamaCabang"":varNamaCabang, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varSumberDanaBilaTidakBekerja"":varSumberDanaBilaTidakBekerja, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:11:42,2019-10-22 13:11:56,14.037s,PASSED
+"callTestCase(findTestCase(""Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW""), [""varNamaBank"":varNamaBank, ""varNomorRekening"":varNomorRekening, ""varNamaPemegangRekening"":varNamaPemegangRekening, ""varBulan"":varBulan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:11:56,2019-10-22 13:12:20,23.346s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:12:20,2019-10-22 13:12:22,2.007s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 13:12:22,2019-10-22 13:12:32,10.002s,PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2019-10-22 13:12:32,2019-10-22 13:12:42,10.002s,PASSED
+"tap(findTestObject(""dynamic object/BtnBerikutnya""), 0)",,,,2019-10-22 13:12:42,2019-10-22 13:12:43,1.653s,PASSED
+"callTestCase(findTestCase(""Data Entry/Data Asset/MASTER FLOW/TC_Data Asset - MASTER FLOW""), [""varNomorRangka"":varNomorRangka, ""varNomorMesin"":varNomorMesin, ""varNamaBPKB"":varNamaBPKB, ""varNomorBPKB"":varNomorBPKB, ""varNomorPolisiDepan"":varNomorPolisiDepan, ... ], STOP_ON_FAILURE)",,,,2019-10-22 13:12:43,2019-10-22 13:12:43,0.006s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-10-22 13:12:43,2019-10-22 13:12:46,2.813s,PASSED

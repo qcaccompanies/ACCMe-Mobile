@@ -13,8 +13,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.waitForElementPresent(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 
-    0)
+Mobile.verifyElementVisible(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 
+    60, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 0)
 
@@ -54,8 +54,6 @@ if (varPaket == 'ya') {
 
     Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : varKodePaket]), 0)
 }
-
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
 
 Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Brand'), varBrand, 0)
 
@@ -126,15 +124,13 @@ Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/Sim
 not_run: Mobile.setText(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 
     varSales, 0)
 
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.4, 0.3, 1000)
-
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Inp Sales Dealer'), 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_LOV Sales Dealer'), 0)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Hitung'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Simulasi Kredit/TxtBerhasilMelakukanPerhitungan'), 60, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Berikutnya'), 0)
 

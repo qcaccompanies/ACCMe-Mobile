@@ -29,7 +29,7 @@ Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Loan Detail/LoanDetail_Hitung'), 0)
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Simulasi Kredit/TxtBerhasilMelakukanPerhitungan'), 60, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Loan Detail/LoanDetail_Berikutnya'), 0)
 

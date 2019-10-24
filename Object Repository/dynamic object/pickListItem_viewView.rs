@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.view.View' and (text() = '${text}' or . = '${text}') and @enabled = 'true']</value>
+         <value>//*[@class = 'android.view.View' and (contains(text(), '${text}') or contains(., '${text}')) and @enabled = 'true']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>

@@ -12,13 +12,18 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 Mobile.tap(findTestObject('Bank Account/TAB/BankAccount_TabBankHistory'), 0)
 
 Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_InpNamaBank'), varNamaBank, 
     0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_TextView', [('text') : varNamaBank]), 0)
+Mobile.tap(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_InpNamaBank'), 0, FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'mobile.picklist.List'(findTestObject('dynamic object/pickListItem_viewView', [('text') : varNamaBank]), 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_InpNomorRekening'), varNomorRekening, 
     0)
@@ -28,7 +33,7 @@ Mobile.setText(findTestObject('Bank Account/Bank Account - Bank History/BankAcco
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-if (varTambahBankHistory == 'Y') {
+not_run: if (varTambahBankHistory == 'Y') {
     Mobile.tap(findTestObject('Bank Account/Bank Account - Bank History/BankAccount_BankHistory_BtnTambahBankHistory'), 
         0)
 

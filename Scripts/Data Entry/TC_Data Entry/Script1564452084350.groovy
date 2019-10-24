@@ -12,27 +12,31 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.callTestCase(findTestCase('dynamic test case/open application'), [:], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.delay(40, FailureHandling.STOP_ON_FAILURE)
+
 //simulasi kredit
-WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW'), 
+not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit/MASTER FLOW/TC_Simulasi Kredit - MASTER FLOW'), 
     [('varBrand') : varBrand, ('varType') : varType, ('varModel') : varModel, ('varTahun') : varTahun, ('varTenor') : varTenor
         , ('varOTR') : varOTR, ('varRP') : varRP, ('varDealer') : varDealer, ('varSales') : varSales, ('varTipePembiayaan') : varTipePembiayaan
         , ('varPembiayaan') : varPembiayaan, ('varUsedCar') : varUsedCar, ('varTopup') : varTopup, ('varADDMdanADDB') : varADDMdanADDB
         , ('varACP') : varACP, ('varPaket') : varPaket, ('varKodePaket') : varKodePaket, ('varNoKontrakExisting') : varNoKontrakExisting], 
     FailureHandling.OPTIONAL)
 
-WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW'), 
+not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Simulasi Kredit - Asuransi/MASTER FLOW/TC_Asuransi - MASTER FLOW'), 
     [('varAsuransi') : varAsuransi, ('varKodeWilayah') : varKodeWilayah, ('varTipeAsuransi') : varTipeAsuransi, ('varPenggunaanUnit') : varPenggunaanUnit
         , ('varPembayaranAsuransi') : varPembayaranAsuransi], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW'), 
+not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Kategori Loan/MASTER FLOW/TC_Kategori Loan - Master FLOW'), 
     [('varTipeAplikasi') : 'CF', ('varTipePelanggan') : 'personal', ('varObjekPembiayaan') : 'PB', ('varTujuanPembiayaan') : 'produktif'
         , ('varJaminanPembiayaan') : 'MOBIL', ('varOpsiNPWP') : 'Approval'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW'), [('varTipeAngsuran') : varTipeAngsuran], 
-    FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Data Entry/Simulasi Kredit/Loan Detail/MASTER FLOW/TC_Loan Detail - MASTER FLOW'), 
+    [('varTipeAngsuran') : varTipeAngsuran], FailureHandling.STOP_ON_FAILURE)
 
 // upload foto
 not_run: if (varUploadBorrower == 'Y') {
@@ -79,9 +83,7 @@ not_run: Mobile.waitForElementPresent(findTestObject('dynamic object/BtnBerikutn
 
 not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Borrower/Flow Borrower'), [('BvarPekerjaanTab') : BvarPekerjaanTab, ('BvarUsahaTab') : BvarUsahaTab
+WebUI.callTestCase(findTestCase('Data Entry/Borrower/Flow Borrower'), [('BvarPekerjaanTab') : BvarPekerjaanTab, ('BvarUsahaTab') : BvarUsahaTab
         , ('BIvarTahun') : BIvarTahun, ('BIvarNoKTP') : BIvarNoKTP, ('BIvarNamaSesuaiIdentitas') : BIvarNamaSesuaiIdentitas
         , ('BIvarTempatLahir') : BIvarTempatLahir, ('BIvarAlamatLengkap') : BIvarAlamatLengkap, ('BIvarRT') : BIvarRT, ('BIvarRW') : BIvarRW
         , ('BIvarKodePos') : BIvarKodePos, ('BIvarAgama') : BIvarAgama, ('BIvarStatusPerkawinan') : BIvarStatusPerkawinan
@@ -112,9 +114,11 @@ not_run: WebUI.callTestCase(findTestCase('Data Entry/Borrower/Flow Borrower'), [
         , ('BEvarRW') : BEvarRW, ('BEvarKodePos') : BEvarKodePos, ('BEvarKodeArea') : BEvarKodeArea, ('BEvarNoTelponKantor') : BEvarNoTelponKantor
         , ('BEvarEXT') : BEvarEXT, ('BEvarTeleponSelular') : BEvarTeleponSelular, ('BEvarEmail') : BEvarEmail], FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Borrower/TxtSemuaDataSudahDiisi'), 80, FailureHandling.OPTIONAL)
 
 not_run: if (AllStatusPerkawinan == 'Married') {
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
@@ -180,55 +184,53 @@ not_run: if (AllGuarantor == 'Ya') {
         FailureHandling.STOP_ON_FAILURE)
 }
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW'), [('varPenghasilanKotorSatu') : varPenghasilanKotorSatu
+WebUI.callTestCase(findTestCase('Data Entry/Penghasilan/MASTER FLOW/TC_Penghasilan - MASTER FLOW'), [('varPenghasilanKotorSatu') : varPenghasilanKotorSatu
         , ('varPenghasilanKotorDua') : varPenghasilanKotorDua, ('varPenghasilanKotorTiga') : varPenghasilanKotorTiga, ('varJenisPekerjaanAtauUsahaSatu') : varJenisPekerjaanAtauUsahaSatu
         , ('varJenisPekerjaanAtauUsahaDua') : varJenisPekerjaanAtauUsahaDua, ('varJenisPekerjaanAtauUsahaTiga') : varJenisPekerjaanAtauUsahaTiga
         , ('varSumberPenghasilanSatu') : varSumberPenghasilanSatu, ('varPemilikPenghasilanSatu') : varPemilikPenghasilanSatu
         , ('varPenghasilanDua') : varPenghasilanDua, ('varPenghasilanTiga') : varPenghasilanTiga], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW'), 
+WebUI.callTestCase(findTestCase('Data Entry/Bank Account/Bank Account/MASTER FLOW/TC_Bank Account - Bank Account - MASTER FLOW'), 
     [('varNamaCabang') : varNamaCabang, ('varNomorRekening') : varNomorRekening, ('varNamaPemegangRekening') : varNamaPemegangRekening
         , ('varSumberDanaBilaTidakBekerja') : varSumberDanaBilaTidakBekerja, ('varMetodePembayaran') : varMetodePembayaran
         , ('varPembukaanRekeningPermata') : varPembukaanRekeningPermata], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW'), 
+WebUI.callTestCase(findTestCase('Data Entry/Bank Account/Bank History/MASTER FLOW/TC_Bank Account - Bank History - MASTER FLOW'), 
     [('varNamaBank') : varNamaBank, ('varNomorRekening') : varNomorRekening, ('varNamaPemegangRekening') : varNamaPemegangRekening
         , ('varBulan') : varBulan, ('varFrekuensiDebit') : varFrekuensiDebit, ('varFrekuensiKredit') : varFrekuensiKredit
         , ('varMutasiDebit') : varMutasiDebit, ('varMutasiKredit') : varMutasiKredit, ('varSaldoTertinggi') : varSaldoTertinggi
         , ('varSaldoRataRata') : varSaldoRataRata, ('varSaldoTerrendah') : varSaldoTerrendah, ('varFrekuensiTolakanLuar') : varFrekuensiTolakanLuar
         , ('varFrekuensiTolakanDalam') : varFrekuensiTolakanDalam, ('varTambahBankHistory') : varTambahBankHistory], FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
+Mobile.tap(findTestObject('dynamic object/BtnBerikutnya'), 0)
 
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Data Asset/MASTER FLOW/TC_Data Asset - MASTER FLOW'), [('varNomorRangka') : varNomorRangka
+WebUI.callTestCase(findTestCase('Data Entry/Data Asset/MASTER FLOW/TC_Data Asset - MASTER FLOW'), [('varNomorRangka') : varNomorRangka
         , ('varNomorMesin') : varNomorMesin, ('varNamaBPKB') : varNamaBPKB, ('varNomorBPKB') : varNomorBPKB, ('varNomorPolisiDepan') : varNomorPolisiDepan
         , ('varNomorPolisiTengah') : varNomorPolisiTengah, ('varNomorPolisiBelakang') : varNomorPolisiBelakang, ('varNomorFaktur') : varNomorFaktur
         , ('varAlamat') : varAlamat, ('varRT') : varRT, ('varRW') : varRW, ('varKodePos') : varKodePos, ('varWarna') : varWarna
         , ('varBPKBBedaNama') : varBPKBBedaNama, ('Survey_varAlamatLengkap') : Survey_varAlamatLengkap, ('Survey_varRT') : Survey_varRT
         , ('Survey_varRW') : Survey_varRW, ('Survey_varKodePos') : Survey_varKodePos, ('Survey_varNoTeleponFixedLine') : Survey_varNoTeleponFixedLine
-        , ('Survey_varTeleponSeluler') : '08377373', ('Survey_varvarPetunjukAlamat') : 'ahahhahahahah', ('Survey_varAlamatSurveySamaDomisili') : Survey_varAlamatSurveySamaDomisili
-        , ('BPKB_Identitas_varNomorIdentitas') : BPKB_Identitas_varNomorIdentitas, ('BPKB_Identitas_varNamaSesuaiIdentitas') : BPKB_Identitas_varNamaSesuaiIdentitas
-        , ('BPKB_Identitas_varTempatLahir') : BPKB_Identitas_varTempatLahir, ('BPKB_Identitas_varAlamatLengkap') : BPKB_Identitas_varAlamatLengkap
-        , ('BPKB_Identitas_varRT') : BPKB_Identitas_varRT, ('BPKB_Identitas_varRW') : BPKB_Identitas_varRW, ('BPKB_Identitas_varKodePos') : BPKB_Identitas_varKodePos
-        , ('BPKB_Identitas_varAgama') : BPKB_Identitas_varAgama, ('BPKB_Identitas_varStatusPerkawinan') : BPKB_Identitas_varStatusPerkawinan
-        , ('BPKB_Identitas_varKewarganegaraan') : BPKB_Identitas_varKewarganegaraan, ('BPKB_Identitas_varNegaraAsal') : BPKB_Identitas_varNegaraAsal
-        , ('BPKB_Identitas_varNoPassport') : BPKB_Identitas_varNoPassport, ('BPKB_Identitas_varMasaBerlaku') : BPKB_Identitas_varMasaBerlaku], 
+        , ('Survey_varTeleponSeluler') : Survey_varTeleponSeluler, ('Survey_varvarPetunjukAlamat') : Survey_varvarPetunjukAlamat
+        , ('Survey_varAlamatSurveySamaDomisili') : Survey_varAlamatSurveySamaDomisili, ('BPKB_Identitas_varNomorIdentitas') : BPKB_Identitas_varNomorIdentitas
+        , ('BPKB_Identitas_varNamaSesuaiIdentitas') : BPKB_Identitas_varNamaSesuaiIdentitas, ('BPKB_Identitas_varTempatLahir') : BPKB_Identitas_varTempatLahir
+        , ('BPKB_Identitas_varAlamatLengkap') : BPKB_Identitas_varAlamatLengkap, ('BPKB_Identitas_varRT') : BPKB_Identitas_varRT
+        , ('BPKB_Identitas_varRW') : BPKB_Identitas_varRW, ('BPKB_Identitas_varKodePos') : BPKB_Identitas_varKodePos, ('BPKB_Identitas_varAgama') : BPKB_Identitas_varAgama
+        , ('BPKB_Identitas_varStatusPerkawinan') : BPKB_Identitas_varStatusPerkawinan, ('BPKB_Identitas_varKewarganegaraan') : BPKB_Identitas_varKewarganegaraan
+        , ('BPKB_Identitas_varNegaraAsal') : BPKB_Identitas_varNegaraAsal, ('BPKB_Identitas_varNoPassport') : BPKB_Identitas_varNoPassport
+        , ('BPKB_Identitas_varMasaBerlaku') : BPKB_Identitas_varMasaBerlaku], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Data Entry/Summary Outstanding/MASTER FLOW/TC_Summary Outstanding - MASTER FLOW'), [:], 
     FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.callTestCase(findTestCase('Data Entry/Summary Outstanding/MASTER FLOW/TC_Summary Outstanding - MASTER FLOW'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
-
-not_run: com.kms.katalon.core.appium.driver.AppiumDriverManager.getDriver().quit()
 

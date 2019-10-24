@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.view.View' and (text() = ' Gallery' or . = ' Gallery')]</value>
+         <value>//*[@class = 'android.view.View' and (contains(text(), 'Gallery') or contains(., 'Gallery'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,10 +28,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Gallery</value>
+      <value>Gallery</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

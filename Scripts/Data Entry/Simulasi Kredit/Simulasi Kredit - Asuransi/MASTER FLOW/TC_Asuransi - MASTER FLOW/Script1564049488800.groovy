@@ -55,7 +55,7 @@ CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Hitung'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Simulasi Kredit/TxtBerhasilMelakukanPerhitungan'), 60, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Simulasi Kredit/Simulasi Kredit - Asuransi/Asuransi_Berikutnya'), 0)
 

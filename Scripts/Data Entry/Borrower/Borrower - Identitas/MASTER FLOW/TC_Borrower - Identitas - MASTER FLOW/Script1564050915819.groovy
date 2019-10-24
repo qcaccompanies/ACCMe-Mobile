@@ -12,6 +12,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+Mobile.verifyElementVisible(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-WNI'), 60, FailureHandling.OPTIONAL)
 
 if (BIvarKewarganegaraan == 'WNI') {
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-WNI'), 0)
@@ -54,13 +58,13 @@ if (BIvarVerifikasi == 'Ya') {
         Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-lakilaki'), 0)
     }
     
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.7, 0.2, 1000)
+    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
 
     Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), BIvarTempatLahir, 0)
 
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : BIvarTempatLahir]), 0, FailureHandling.STOP_ON_FAILURE)
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -70,9 +74,15 @@ if (BIvarVerifikasi == 'Ya') {
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
+    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
+
     not_run: WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : BIvarTahun], FailureHandling.STOP_ON_FAILURE)
 
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), 0, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), BIvarAlamatLengkap, 0)
+
+    WebUI.delay(1)
 
     Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpRT'), BIvarRT, 0)
 
@@ -83,10 +93,6 @@ if (BIvarVerifikasi == 'Ya') {
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_Identitas_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtStatusPerkawinan'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : BIvarStatusPerkawinan]), 0, FailureHandling.STOP_ON_FAILURE)
 }
 
 Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtAgama'), 0, FailureHandling.STOP_ON_FAILURE)

@@ -45,7 +45,7 @@ Mobile.setText(findTestObject('Bank Account/Bank Account - Bank Account/BankAcco
 Mobile.setText(findTestObject('Bank Account/Bank Account - Bank Account/BankAccount_BankAccount_InpNamaPemegangRekening'), 
     varNamaPemegangRekening, 0)
 
-if (varPembukaanRekeningPermata == 'Y') {
+not_run: if (varPembukaanRekeningPermata == 'Y') {
     Mobile.tap(findTestObject('Bank Account/Bank Account - Bank Account/BankAccount_BankAccount_BtnPembukaanRekeningPermata - Ya'), 
         0)
 
