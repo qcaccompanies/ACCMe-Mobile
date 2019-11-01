@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.Spinner' and (text() = 'SILAKAN PILIH' or . = 'SILAKAN PILIH') and @resource-id = 'b7-b42-List']</value>
+         <value>//*[@class = 'android.widget.Spinner' and @resource-id = 'b7-b56-List']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -27,7 +27,7 @@
       <value>6</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>b7-b42-List</value>
+      <value>b7-b56-List</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

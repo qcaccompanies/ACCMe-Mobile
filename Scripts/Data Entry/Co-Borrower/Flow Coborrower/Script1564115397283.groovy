@@ -17,7 +17,7 @@ WebUI.callTestCase(findTestCase('Data Entry/Co-Borrower/Co-Borrower - Identitas/
         , ('CIvarNamaSesuaiIdentitas') : CIvarNamaSesuaiIdentitas, ('CIvarTempatLahir') : CIvarTempatLahir, ('CIvarAlamatLengkap') : CIvarAlamatLengkap
         , ('CIvarRT') : CIvarRT, ('CIvarRW') : CIvarRW, ('CIvarKodePos') : CIvarKodePos, ('CIvarAgama') : CIvarAgama, ('CIvarPerkawinan') : CIvarPerkawinan
         , ('CIvarNegaraAsal') : CIvarNegaraAsal, ('CIvarNomorPassport') : CIvarNomorPassport, ('CIvarKewarganegaraan') : CIvarKewarganegaraan
-        , ('CIvarMasaBerlaku') : CIvarMasaBerlaku, ('CIvarVerifikasi') : CIvarVerifikasi], FailureHandling.STOP_ON_FAILURE)
+        , ('CIvarMasaBerlaku') : CIvarMasaBerlaku], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
 

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>DATA ENTRY - GUARANTOR</name>
+   <name>Asset</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
-   <csvSeperator>COMMA</csvSeperator>
-   <dataFileGUID>c7b89198-1ca7-4af8-abd2-776695df7c14</dataFileGUID>
-   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\dataentry - guarantor data.csv</dataSourceUrl>
-   <driver>CSV</driver>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>07fb32f3-6170-495a-9cf2-88974330ab76</dataFileGUID>
+   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\data\Asset.xls</dataSourceUrl>
+   <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName></sheetName>
+   <sheetName>Asset</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

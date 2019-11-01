@@ -12,12 +12,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
-Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 Mobile.tap(findTestObject('Summary Outstanding/SummaryOutstanding_BtnSurvey'), 0)
 
 Mobile.tap(findTestObject('Summary Outstanding/SummaryOutstanding_Survey_BtnConfirm'), 0)
 
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementAttributeValue(findTestObject('Summary Outstanding/SummaryOutstanding_Survey_BtnConfirm'), 'clickable', 
+    'false', 240, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Summary Outstanding/SummaryOutstanding_Survey_BtnBatal'), 0)
+
 Mobile.tap(findTestObject('Summary Outstanding/SummaryOutstanding_BtnSubmit'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Simulasi Kredit/Simulasi Kredit - Simulasi Kredit/SimulasiKredit_Btn Simulasi Kredit'), 
+    60, FailureHandling.OPTIONAL)
 

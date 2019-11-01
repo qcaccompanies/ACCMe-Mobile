@@ -29,71 +29,65 @@ if (BIvarKewarganegaraan == 'WNI') {
 
 Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpNoKTP'), BIvarNoKTP, 0)
 
-if (BIvarVerifikasi == 'Ya') {
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_BtnVerifikasiKTP'), 0)
+if (BIvarMasaBerlaku == 'seumurhidup') {
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-SeumurHidup'), 0)
 
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
+    if (BIvarKewarganegaraan == 'WNA') {
+        Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-NomorPassport'), BIvarNomorPassport, 
+            0)
+
+        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TanggalBerakhirPassport'), 0)
+    }
 } else {
-    if (BIvarMasaBerlaku == 'seumurhidup') {
-        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-SeumurHidup'), 0)
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TidakSeumurHidup'), 0)
 
-        if (BIvarKewarganegaraan == 'WNA') {
-            Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-NomorPassport'), BIvarNomorPassport, 
-                0)
-
-            Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TanggalBerakhirPassport'), 0)
-        }
-    } else {
-        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TidakSeumurHidup'), 0)
-
-        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TanggalBerakhirIdentitas'), 0)
-    }
-    
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpNamaSesuaiIdentitas'), BIvarNamaSesuaiIdentitas, 
-        0)
-
-    if (BIvarJenisKelamin == 'perempuan') {
-        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-perempuan'), 0)
-    } else {
-        Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-lakilaki'), 0)
-    }
-    
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
-
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), BIvarTempatLahir, 0)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtTanggalLahir'), 0)
-
-    WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : BIvarTahun], FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
-
-    not_run: WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : BIvarTahun], FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), BIvarAlamatLengkap, 0)
-
-    WebUI.delay(1)
-
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpRT'), BIvarRT, 0)
-
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpRW'), BIvarRW, 0)
-
-    Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), BIvarKodePos, 0)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_Identitas_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-TanggalBerakhirIdentitas'), 0)
 }
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpNamaSesuaiIdentitas'), BIvarNamaSesuaiIdentitas, 
+    0)
+
+if (BIvarJenisKelamin == 'perempuan') {
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-perempuan'), 0)
+} else {
+    Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower-Identitas-lakilaki'), 0)
+}
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), BIvarTempatLahir, 0)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtTanggalLahir'), 0)
+
+WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : BIvarTahun], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
+
+not_run: WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : BIvarTahun], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpAlamatLengkap'), BIvarAlamatLengkap, 0)
+
+WebUI.delay(1)
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpRT'), BIvarRT, 0)
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpRW'), BIvarRW, 0)
+
+Mobile.setText(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), BIvarKodePos, 0)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_InpKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_Identitas_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Borrower/Borrower - Identitas/Borrower_TxtAgama'), 0, FailureHandling.STOP_ON_FAILURE)
 

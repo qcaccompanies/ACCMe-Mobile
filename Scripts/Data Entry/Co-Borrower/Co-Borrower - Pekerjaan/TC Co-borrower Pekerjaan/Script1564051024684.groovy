@@ -68,15 +68,19 @@ Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaa
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CPvarNationalityPerusahaan]), 0)
 
-Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-Website'), CPvarWebsite, 0)
+not_run: Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-Website'), CPvarWebsite, 
+    0)
 
-Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-JenisSosmed'), 0)
+not_run: Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-JenisSosmed'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CPvarJenisAkunSosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CPvarJenisAkunSosmed]), 0)
 
-Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-AkunSosmed'), CPvarAkunSosmed, 0)
+not_run: Mobile.setText(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborrower-Pekerjaan-AkunSosmed'), CPvarAkunSosmed, 
+    0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Pekerjaan/Coborower-Pekerjaan-AlamatKantorBar'), 0)
 

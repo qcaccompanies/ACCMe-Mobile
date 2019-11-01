@@ -34,20 +34,20 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Na
 
 Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-BidangUsaha'), CUvarBidangUsaha, 0)
 
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.6, 1000)
-
 Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-BidangUsaha'), 0, FailureHandling.STOP_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CUVarBidangUsaha]), 0)
 
-Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Asuransi'), 0)
+not_run: Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Asuransi'), 0)
 
-not_run: CustomKeywords.'mobile.picklist.List'(findTestObject('dynamic object/pickListItem_viewView', [('text') : VarPekerjaan]), 
+CustomKeywords.'mobile.picklist.List'(findTestObject('dynamic object/pickListItem_viewView', [('text') : CUvarBidangUsaha]), 
     FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Sub-BidangUsaha'), 0)
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CUvarSubBidangUsaha]), 0)
+
+not_run: CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.6, 1000)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-TanggalMulaiBisnis'), 0)
 
@@ -79,11 +79,11 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Ex
 
 Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-TeleponSeluler'), CUvarHP, 0)
 
-Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Website'), CUvarWebsite, 0)
+not_run: Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-Website'), CUvarWebsite, 0)
 
-Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-JenisAkunSosmed'), 0)
+not_run: Mobile.tap(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-JenisAkunSosmed'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CUvarJenisSosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CUvarJenisSosmed]), 0)
 
-Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-AkunSosmed'), CUvarAkunsosmed, 0)
+not_run: Mobile.setText(findTestObject('Coborrower/Coborrower - Usaha/Coborrower-Usaha-AkunSosmed'), CUvarAkunsosmed, 0)
 

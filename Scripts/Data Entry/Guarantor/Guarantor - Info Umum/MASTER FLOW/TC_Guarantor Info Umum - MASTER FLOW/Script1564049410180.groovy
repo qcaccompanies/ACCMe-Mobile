@@ -37,9 +37,9 @@ Mobile.setText(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_InfoUmu
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_InfoUmum_InpTeleponSeluler'), GIUvarTseluler, 0)
 
-Mobile.tap(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_ Jenis Akun Sosial Media'), 0)
+not_run: Mobile.tap(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_ Jenis Akun Sosial Media'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GIUvarAkunsosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GIUvarAkunsosmed]), 0)
 
-Mobile.setText(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_ Akun Sosial Media'), GIUvarSosmed, 0)
+not_run: Mobile.setText(findTestObject('Guarantor/Guarantor - Info Umum/Guarantor_ Akun Sosial Media'), GIUvarSosmed, 0)
 

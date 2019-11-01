@@ -16,7 +16,11 @@ import internal.GlobalVariable as GlobalVariable
 if (GDvarDomisili == 'Tidak') {
     Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor-Domisili-TidakDomisili'), 0)
 
+    Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Alamat Lengkap'), 0, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.setText(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Alamat Lengkap'), GDvarAlamatLengkap, 0)
+
+    Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.setText(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM RT'), GDvarRT, 0)
 
@@ -31,13 +35,13 @@ if (GDvarDomisili == 'Tidak') {
     Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor-Domisili-YaDomisili'), 0)
 }
 
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
+
 Mobile.setText(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Negara'), GDvarNegara, 0)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Negara'), 0)
 
-Mobile.tap(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_Domisili_LOVNegaraDomisili'), 0)
-
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.5, 1000)
+Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : GDvarNegara]), 0)
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Domisili/Guarantor_ DM Petunjuk Alamat'), GDvarPtjkAlamat, 0)
 

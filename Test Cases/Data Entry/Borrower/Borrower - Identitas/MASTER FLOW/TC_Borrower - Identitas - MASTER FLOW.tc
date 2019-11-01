@@ -110,11 +110,4 @@
       <masked>false</masked>
       <name>BIvarJenisKelamin</name>
    </variable>
-   <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>33c5f4ce-7e35-4098-ac47-5cd7aa033f53</id>
-      <masked>false</masked>
-      <name>BIvarVerifikasi</name>
-   </variable>
 </TestCaseEntity>

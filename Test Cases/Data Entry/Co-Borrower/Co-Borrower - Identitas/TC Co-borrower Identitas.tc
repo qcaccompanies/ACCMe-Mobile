@@ -97,13 +97,6 @@
       <name>CIvarMasaBerlaku</name>
    </variable>
    <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>a9551adb-611f-432f-a32a-133ecfceb065</id>
-      <masked>false</masked>
-      <name>CIvarVerifikasi</name>
-   </variable>
-   <variable>
       <defaultValue>'1993'</defaultValue>
       <description></description>
       <id>333ae533-fc4d-4872-a90f-971f4f6b401d</id>

@@ -30,60 +30,53 @@ if (CIvarKewarganegaraan == 'WNI') {
 
 Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-inputKTP'), CIvarKTP, 0)
 
-if (CIvarVerifikasi == 'Ya') {
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-btnVerifikasi'), 0)
+if (CIvarMasaBerlaku == 'seumurhidup') {
+    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-SeumurHidup'), 0)
 
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
-} else {
-    if (CIvarMasaBerlaku == 'seumurhidup') {
-        Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-SeumurHidup'), 0)
+    if (CIvarKewarganegaraan == 'WNA') {
+        Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-NomorPassport'), CIvarNomorPassport, 
+            0)
 
-        if (CIvarKewarganegaraan == 'WNA') {
-            Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-NomorPassport'), CIvarNomorPassport, 
-                0)
-
-            Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalBerakhirPassport'), 
-                0)
-        }
-    } else {
-        Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Tidak'), 0)
-
-        Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalBerakhirIdentitas'), 0)
+        Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalBerakhirPassport'), 0)
     }
-    
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-NamaSesuaiIdentitas'), CIvarNamaSesuaiIdentitas, 
-        0)
+} else {
+    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Tidak'), 0)
 
-    CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
-
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TempatLahir'), CIvarTempatLahir, 
-        0)
-
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CIvarTempatLahir]), 0)
-
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalLahir'), 0)
-
-    WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : CIvarTahun], FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-alamat'), CIvarAlamatLengkap, 
-        0)
-
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-rt'), CIvarRT, 0)
-
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-rw'), CIvarRW, 0)
-
-    Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), CIvarKodePos, 0)
-
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), 0, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-12420'), 0)
-
-    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-StatusPerkawinan'), 0)
-
-    Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CIvarPerkawinan]), 0)
+    Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalBerakhirIdentitas'), 0)
 }
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-NamaSesuaiIdentitas'), CIvarNamaSesuaiIdentitas, 
+    0)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TempatLahir'), CIvarTempatLahir, 0)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : CIvarTempatLahir]), 0)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-TanggalLahir'), 0)
+
+WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : CIvarTahun], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-alamat'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-alamat'), CIvarAlamatLengkap, 0)
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-rt'), CIvarRT, 0)
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/coborrower-identitas-rw'), CIvarRW, 0)
+
+Mobile.setText(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), CIvarKodePos, 0)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Kodepos'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-12420'), 0)
+
+Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-StatusPerkawinan'), 0)
+
+Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CIvarPerkawinan]), 0)
 
 Mobile.tap(findTestObject('Coborrower/Coborrower - Identitas/Coborrower-Identitas-Agama'), 0)
 

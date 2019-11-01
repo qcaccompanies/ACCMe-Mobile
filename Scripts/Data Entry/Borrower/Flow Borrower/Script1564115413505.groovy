@@ -18,7 +18,7 @@ WebUI.callTestCase(findTestCase('Data Entry/Borrower/Borrower - Identitas/MASTER
         , ('BIvarAlamatLengkap') : BIvarAlamatLengkap, ('BIvarRT') : BIvarRT, ('BIvarRW') : BIvarRW, ('BIvarKodePos') : BIvarKodePos
         , ('BIvarAgama') : BIvarAgama, ('BIvarStatusPerkawinan') : BIvarStatusPerkawinan, ('BIvarNegaraAsal') : BIvarNegaraAsal
         , ('BIvarNomorPassport') : BIvarNomorPassport, ('BIvarKewarganegaraan') : BIvarKewarganegaraan, ('BIvarMasaBerlaku') : BIvarMasaBerlaku
-        , ('BIvarJenisKelamin') : BIvarJenisKelamin, ('BIvarVerifikasi') : BIvarVerifikasi], FailureHandling.STOP_ON_FAILURE)
+        , ('BIvarJenisKelamin') : BIvarJenisKelamin], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
 
@@ -63,6 +63,8 @@ if (BvarPekerjaanTab == 'Ya') {
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.2, 0.8, 1000)
 
 if (BvarUsahaTab == 'Ya') {
     WebUI.callTestCase(findTestCase('Data Entry/Borrower/Borrower - Usaha/MASTER FLOW/TC_Borrower - Usaha - MASTER FLOW'), 

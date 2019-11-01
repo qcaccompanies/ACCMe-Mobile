@@ -13,8 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('dynamic test case/open application'), [:], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Pekerjaan'), 0)
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Pekerjaan'), GUvarPekerjaan, 0)
@@ -63,11 +61,11 @@ Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Petunj
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Telepon Seluler'), GUIvarTeleponseluler, 0)
 
-Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Website'), GUvarWebsite, 0)
+not_run: Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Website'), GUvarWebsite, 0)
 
-Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Janis Akun Sosial Media'), 0)
+not_run: Mobile.tap(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Janis Akun Sosial Media'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GUvarJenisSosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GUvarJenisSosmed]), 0)
 
-Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Akun Sosial Media'), GUvarSosmed, 0)
+not_run: Mobile.setText(findTestObject('Guarantor/Guarantor - Usaha/Guarantor_ USH Akun Sosial Media'), GUvarSosmed, 0)
 

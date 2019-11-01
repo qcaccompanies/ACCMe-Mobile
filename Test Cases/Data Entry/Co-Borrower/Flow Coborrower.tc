@@ -111,13 +111,6 @@
       <name>CIvarMasaBerlaku</name>
    </variable>
    <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>a9551adb-611f-432f-a32a-133ecfceb065</id>
-      <masked>false</masked>
-      <name>CIvarVerifikasi</name>
-   </variable>
-   <variable>
       <defaultValue>'Fransiska Maya Lestari'</defaultValue>
       <description></description>
       <id>1dc65ffd-8175-4013-9996-9e6276182f3c</id>

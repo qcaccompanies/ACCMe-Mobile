@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>DATA ENTRY - co borrower</name>
+   <name>Borrower</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
-   <csvSeperator>COMMA</csvSeperator>
-   <dataFileGUID>91e641c4-2463-4c39-bb22-ceb452a1f37a</dataFileGUID>
-   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\dataentry - co borrower data.csv</dataSourceUrl>
-   <driver>CSV</driver>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>7e1c2eca-8d24-4f6d-ae4e-e9aed0fef3b6</dataFileGUID>
+   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\data\Borrower.xls</dataSourceUrl>
+   <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName></sheetName>
+   <sheetName>Borrower</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

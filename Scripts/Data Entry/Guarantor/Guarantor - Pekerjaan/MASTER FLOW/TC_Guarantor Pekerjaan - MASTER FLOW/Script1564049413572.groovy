@@ -47,7 +47,7 @@ Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Badan U
 
 Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GBvarBadanUsaha]), 0)
 
-CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.2, 1000)
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.3, 1000)
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Nama Perusahaan'), GBvarNamaPerusahaan, 0)
 
@@ -68,17 +68,22 @@ Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Natioli
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK LOV Nationality Perusahaan'), 0)
 
-Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Website'), GBvarWebsite, 0)
+not_run: Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Website'), GBvarWebsite, 0)
 
-Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Jenis Akun Sosial Media'), 0)
+not_run: Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Jenis Akun Sosial Media'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GBvarJenisAkunSosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : GBvarJenisAkunSosmed]), 0)
 
-Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Akun Sosial Media'), GBvarSosmed, 0)
+not_run: Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Akun Sosial Media'), GBvarSosmed, 
+    0)
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_TabAlamatKantor'), 0)
 
+Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Alamat Kantor'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Alamat Kantor'), GBvarAlamatKantor, 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK RT'), GBvarRT, 0)
 
@@ -88,11 +93,13 @@ Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Kod
 
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Kode Pos'), 0)
 
-Mobile.hideKeyboard(FailureHandling.OPTIONAL)
-
 Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor-Pekerjaan-12420'), 0)
 
+Mobile.tap(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Petunjuk Alamat'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Petunjuk Alamat'), GBvarPtnjkAlamat, 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Guarantor/Guarantor - Pekerjaan/Guarantor_ PK Kode Area'), GBvarKodeArea, 0)
 

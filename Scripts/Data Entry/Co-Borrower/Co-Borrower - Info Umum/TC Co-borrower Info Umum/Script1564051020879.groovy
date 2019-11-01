@@ -39,11 +39,12 @@ Mobile.setText(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-Info
 
 Mobile.setText(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-InfoUmum-NoHP'), CIUvarHP, 0)
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-Mobile.tap(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-InfoUmum-JenisSosmed'), 0)
+not_run: Mobile.tap(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-InfoUmum-JenisSosmed'), 0)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CIUvarJenisAkunSosmed]), 0)
+not_run: Mobile.tap(findTestObject('dynamic object/pickListItem_checkedTextView', [('text') : CIUvarJenisAkunSosmed]), 0)
 
-Mobile.setText(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-InfoUmum-AkunSosmed'), CIUvarAkunSosmed, 0)
+not_run: Mobile.setText(findTestObject('Coborrower/Coborrower - Info Umum/Coborrower-InfoUmum-AkunSosmed'), CIUvarAkunSosmed, 
+    0)
 

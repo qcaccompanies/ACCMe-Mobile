@@ -17,8 +17,8 @@ WebUI.callTestCase(findTestCase('Data Entry/Guarantor/Guarantor - Identitas/MAST
     [('GIvarNIK') : GIvarNIK, ('GIvarAgama') : GIvarAgama, ('GIvarStatus') : GIvarStatus, ('GIvarNamaSesuaiIdentitas') : GIvarNamaSesuaiIdentitas
         , ('GIvarTempatLahir') : GIvarTempatLahir, ('GIvarAlamatLengkap') : GIvarAlamatLengkap, ('GIvarRT') : GIvarRT, ('GIvarRW') : GIvarRW
         , ('GIvarKodePos') : GIvarKodePos, ('GIvarNegaraAsal') : GIvarNegaraAsal, ('GIvarNomorPassport') : GIvarNomorPassport
-        , ('GIvarKewarganegaraan') : GIvarKewarganegaraan, ('GIvarMasaBerlaku') : GIvarMasaBerlaku, ('GIvarVerifikasi') : GIvarVerifikasi
-        , ('GIvarJenisKelamin') : GIvarJenisKelamin], FailureHandling.STOP_ON_FAILURE)
+        , ('GIvarKewarganegaraan') : GIvarKewarganegaraan, ('GIvarMasaBerlaku') : GIvarMasaBerlaku, ('GIvarJenisKelamin') : GIvarJenisKelamin], 
+    FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mobile.mobileSwipe.RightLeft'(0.9, 0.5, 1000)
 

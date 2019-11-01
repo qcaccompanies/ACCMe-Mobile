@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>DATA ENTRY - simulasi dan upload foto</name>
+   <name>Co_Borrower</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
-   <csvSeperator>COMMA</csvSeperator>
-   <dataFileGUID>76617140-0708-48ad-aabc-c81ff7e0f237</dataFileGUID>
-   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\dataentry - simulasi dan upload foto.csv</dataSourceUrl>
-   <driver>CSV</driver>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>229e9922-9a94-41c2-a01c-d726c0fdcd69</dataFileGUID>
+   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\data\Co_Borrower.xls</dataSourceUrl>
+   <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName></sheetName>
+   <sheetName>Co_Borrower</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

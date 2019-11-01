@@ -97,13 +97,6 @@
       <name>GIvarMasaBerlaku</name>
    </variable>
    <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>a9551adb-611f-432f-a32a-133ecfceb065</id>
-      <masked>false</masked>
-      <name>GIvarVerifikasi</name>
-   </variable>
-   <variable>
       <defaultValue>'perempuan'</defaultValue>
       <description></description>
       <id>30ec6ccb-0dfc-4050-9a42-65949337df4d</id>

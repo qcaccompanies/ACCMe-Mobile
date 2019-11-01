@@ -12,6 +12,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 if (BPKB_Identitas_varKewarganegaraan == 'WNA') {
     Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_Identitas_BtnKewarganegaraan - WNA'), 0)
@@ -53,9 +55,13 @@ Mobile.setText(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_InpTempatLa
 
 Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_InpTempatLahir'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('dynamic object/pickListItem_viewView', [('text') : BPKB_Identitas_varTempatLahir]), 0)
+Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_LovTempatLahir'), 0)
+
+CustomKeywords.'mobile.mobileSwipe.UpDown'(0.8, 0.4, 1000)
 
 Mobile.tap(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_TxtTanggalLahir'), 0)
+
+WebUI.callTestCase(findTestCase('dynamic test case/calendar'), [('varTahun') : '1994'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('BPKB Beda Nama/Identitas/BPKBBedaNama_InpAlamatLengkap'), BPKB_Identitas_varAlamatLengkap, 
     0)

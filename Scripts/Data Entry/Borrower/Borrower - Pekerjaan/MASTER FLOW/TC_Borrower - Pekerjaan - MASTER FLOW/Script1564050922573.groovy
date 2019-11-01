@@ -77,6 +77,8 @@ Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_BtnA
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpAlamatKantor'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpAlamatKantor'), BPvarAlamatKantor, 0)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpRT'), BPvarRT, 0)
@@ -89,6 +91,8 @@ Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpK
 
 Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_LOVKodePos'), 0, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpPetunjukAlamat'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpPetunjukAlamat'), BPvarPetunjukAlamat, 
     0)
 
@@ -98,6 +102,8 @@ Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_
     0)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpExt'), BPvarEXT, 0)
+
+Mobile.tap(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpTeleponSeluler'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Pekerjaan/Borrower_Pekerjaan_InpTeleponSeluler'), BPvarTeleponSeluler, 
     0)

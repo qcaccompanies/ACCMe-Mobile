@@ -111,7 +111,7 @@
       <name>GBvarRW</name>
    </variable>
    <variable>
-      <defaultValue>'1642'</defaultValue>
+      <defaultValue>'12420'</defaultValue>
       <description></description>
       <id>06e23a65-230b-4fda-8cc9-9d1dc6654b19</id>
       <masked>false</masked>

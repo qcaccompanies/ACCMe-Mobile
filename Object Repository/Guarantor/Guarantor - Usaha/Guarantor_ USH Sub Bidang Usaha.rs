@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.Spinner' and @resource-id = 'b7-b74-List']</value>
+         <value>//*[@class = 'android.widget.Spinner' and @resource-id = 'b7-b88-List']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>b7-b74-List</value>
+      <value>b7-b88-List</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -594,14 +594,14 @@
       <name>Sales_varUploadKTP</name>
    </variable>
    <variable>
-      <defaultValue>'Unmarried'</defaultValue>
+      <defaultValue>'Married'</defaultValue>
       <description></description>
       <id>68ebdab3-e521-4e5a-adbe-66dd8d31ab06</id>
       <masked>false</masked>
       <name>AllStatusPerkawinan</name>
    </variable>
    <variable>
-      <defaultValue>'Y'</defaultValue>
+      <defaultValue>'Ya'</defaultValue>
       <description></description>
       <id>7898f66d-72c1-45c1-bad3-d74833ee0d66</id>
       <masked>false</masked>
@@ -615,7 +615,7 @@
       <name>BvarPekerjaanTab</name>
    </variable>
    <variable>
-      <defaultValue>'Tidak'</defaultValue>
+      <defaultValue>'Ya'</defaultValue>
       <description></description>
       <id>cdb9a4d0-3c9a-4321-bbea-04b163da4cf8</id>
       <masked>false</masked>
@@ -685,7 +685,7 @@
       <name>BIvarAgama</name>
    </variable>
    <variable>
-      <defaultValue>'UNMARRIED'</defaultValue>
+      <defaultValue>'MARRIED'</defaultValue>
       <description></description>
       <id>93d19067-156b-4a8c-a701-1c859df4ff55</id>
       <masked>false</masked>
@@ -727,13 +727,6 @@
       <name>BIvarJenisKelamin</name>
    </variable>
    <variable>
-      <defaultValue>'Tidak'</defaultValue>
-      <description></description>
-      <id>33c5f4ce-7e35-4098-ac47-5cd7aa033f53</id>
-      <masked>false</masked>
-      <name>BIvarVerifikasi</name>
-   </variable>
-   <variable>
       <defaultValue>'FRANSISKA MAYA LESTARI'</defaultValue>
       <description></description>
       <id>9e3a628f-cb80-4183-a3f5-2112e8ea7321</id>
@@ -748,7 +741,7 @@
       <name>BIUvarNamaPanggilan</name>
    </variable>
    <variable>
-      <defaultValue>'192487192471924'</defaultValue>
+      <defaultValue>'826820409541000'</defaultValue>
       <description></description>
       <id>6ba89e10-d8ad-4d6a-ad4c-fc8b58ded4b9</id>
       <masked>false</masked>
@@ -1350,7 +1343,7 @@
       <name>CIvarAgama</name>
    </variable>
    <variable>
-      <defaultValue>'UNMARRIED'</defaultValue>
+      <defaultValue>'MARRIED'</defaultValue>
       <description></description>
       <id>601bd832-5e1f-43d2-a458-39f47197462c</id>
       <masked>false</masked>
@@ -1383,13 +1376,6 @@
       <id>636090b9-aa5d-4b14-a061-e364a9041fe9</id>
       <masked>false</masked>
       <name>CIvarMasaBerlaku</name>
-   </variable>
-   <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>a9551adb-611f-432f-a32a-133ecfceb065</id>
-      <masked>false</masked>
-      <name>CIvarVerifikasi</name>
    </variable>
    <variable>
       <defaultValue>'Fransiska Maya Lestari'</defaultValue>
@@ -1665,7 +1651,7 @@
       <name>CPvarKodePos</name>
    </variable>
    <variable>
-      <defaultValue>'seberang pasar\r\n'</defaultValue>
+      <defaultValue>'seberang pasar'</defaultValue>
       <description></description>
       <id>8c22a9b6-0d15-4bf7-a8f1-504de2de5e70</id>
       <masked>false</masked>
@@ -1915,13 +1901,6 @@
       <id>636090b9-aa5d-4b14-a061-e364a9041fe9</id>
       <masked>false</masked>
       <name>GIvarMasaBerlaku</name>
-   </variable>
-   <variable>
-      <defaultValue>'Ya'</defaultValue>
-      <description></description>
-      <id>a9551adb-611f-432f-a32a-133ecfceb065</id>
-      <masked>false</masked>
-      <name>GIvarVerifikasi</name>
    </variable>
    <variable>
       <defaultValue>'perempuan'</defaultValue>
@@ -2190,7 +2169,7 @@
       <name>GBvarRW</name>
    </variable>
    <variable>
-      <defaultValue>'1642'</defaultValue>
+      <defaultValue>'12420'</defaultValue>
       <description></description>
       <id>06e23a65-230b-4fda-8cc9-9d1dc6654b19</id>
       <masked>false</masked>
@@ -2617,7 +2596,7 @@
       <name>varWarna</name>
    </variable>
    <variable>
-      <defaultValue>'Y'</defaultValue>
+      <defaultValue>'N'</defaultValue>
       <description></description>
       <id>5c2abe71-087d-431d-bf27-08aa244068f4</id>
       <masked>false</masked>

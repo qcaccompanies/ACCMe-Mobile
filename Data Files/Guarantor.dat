@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>simulasi</name>
+   <name>Guarantor</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>e71f3616-e8a4-4401-a33f-7b5079d97a50</dataFileGUID>
-   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\dataentry - simulasi dan upload foto.xlsx</dataSourceUrl>
+   <dataFileGUID>9d739435-5db2-4eaa-a12f-020e402e00f3</dataFileGUID>
+   <dataSourceUrl>C:\Users\15421\git\ACCMe-Mobile\data\Guarantor.xls</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>Guarantor</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

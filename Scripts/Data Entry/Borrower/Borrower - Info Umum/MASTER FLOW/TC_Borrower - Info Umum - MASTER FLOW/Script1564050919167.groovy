@@ -18,8 +18,6 @@ Mobile.tap(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaLengkap
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaLengkapTanpaSingkatan'), BIUvarNamaLengkapTanpaSingkatan, 
     0)
 
-Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaPanggilan'), BIUvarNamaPanggilan, 0)
-
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNoNPWP'), BIUvarNoNPWP, 0)
 
 Mobile.setText(findTestObject('Borrower/Borrower - Info Umum/Borrower_InpNamaNPWP'), BIUvarNamaNPWP, 0)
