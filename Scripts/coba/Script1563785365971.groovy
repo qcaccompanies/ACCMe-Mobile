@@ -17,11 +17,5 @@ WebUI.callTestCase(findTestCase('dynamic test case/open application'), [:], Fail
 
 Mobile.delay(60, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('COBA/Inp_NoKTP'), '1234567890123456', 0)
-
-Mobile.tap(findTestObject('COBA/Btn_SeumurHidup'), 0)
-
-Mobile.setText(findTestObject('COBA/InpNamaSesuaiIdentitas'), 'asdasdadas', 0)
-
-Mobile.setText(findTestObject('COBA/Inp_TempatLahir'), 'aceh', 0)
+Mobile.sendKeys(findTestObject('test/tanggalcoba'), '2019-11-08')
 

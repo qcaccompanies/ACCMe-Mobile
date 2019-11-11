@@ -1390,9 +1390,9 @@
          <variableId>b4eda89f-164e-4e63-80b5-1ce09d62add2</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>7a6812a4-ded6-4f72-bb09-a634fd7f543c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>CDvarDomisili</value>
          <variableId>e41779c3-8153-4912-94ac-cf6632b79ff7</variableId>
       </variableLink>
       <variableLink>
@@ -2104,9 +2104,9 @@
          <variableId>2c1cf5e3-54fd-4a07-909a-4742418a7c0b</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>7448915b-d1cc-49a7-8c09-1ede50059e1e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>varPemilikPenghasilanSatu</value>
          <variableId>5c397347-d65e-4dfd-aae4-9a4cedc192be</variableId>
       </variableLink>
       <variableLink>

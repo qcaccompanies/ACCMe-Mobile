@@ -8928,9 +8928,7 @@
   <property name="startLine">32</property>
   <property name="stepIndex">8</property>
 </record>
-</log><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
-<log>
 <record>
   <date>2019-11-01T10:23:28</date>
   <millis>1572578608482</millis>
@@ -9459,3 +9457,4 @@
   <message>Reading excel file with source file &amp;apos;C:\\Users\\15421\\git\\ACCMe-Mobile\\data\\Upload_Document.xls&amp;apos; and sheet name &amp;apos;Upload_Document&amp;apos;</message>
   <nestedLevel>0</nestedLevel>
 </record>
+</log>
